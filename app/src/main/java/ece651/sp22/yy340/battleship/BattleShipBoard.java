@@ -1,14 +1,15 @@
 package ece651.sp22.yy340.battleship;
 
-  /**
-   * Constructs a BattleShipBoard with the specified width
-   * and height
-   * @param w is the width of the newly constructed board.
-   * @param h is the height of the newly constructed board.
-   * @throws IllegalArgumentException if the width or height are less than or equal to zero.
-   */
+/**
+ * Constructs a BattleShipBoard with the specified width and height
+ * 
+ * @param w is the width of the newly constructed board.
+ * @param h is the height of the newly constructed board.
+ * @throws IllegalArgumentException if the width or height are less than or
+ *                                  equal to zero.
+ */
 
-public class BattleShipBoard implements Board{
+public class BattleShipBoard implements Board {
   private final int width;
   private final int height;
 
@@ -20,7 +21,7 @@ public class BattleShipBoard implements Board{
     return height;
   }
 
-  public BattleShipBoard  (int w, int h){
+  public BattleShipBoard(int w, int h) {
     if (w <= 0) {
       throw new IllegalArgumentException("BattleShipBoard's width must be positive but is " + w);
     }
@@ -30,6 +31,5 @@ public class BattleShipBoard implements Board{
     this.width = w;
     this.height = h;
   }
-
 
 }
