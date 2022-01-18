@@ -29,6 +29,7 @@ public class BoardTextView {
   public String displayMyOwnBoard() {
     StringBuilder ans = new StringBuilder();
     ans.append(makeHeader());
+    ans.append(makeBoard());
     ans.append(makeHeader());
     return ans.toString(); //this is a placeholder for the moment
  }
@@ -63,16 +64,10 @@ public class BoardTextView {
     for(int i =0; i < toDisplay.getHeight(); i++){
       ans.append((char) (alphabetic + i));
       ans.append(" ");
-      String bar = "";
-      for(int j =0; j< toDisplay.getWidth(); i++){
-        ans.append(bar);
-        if (toDisplay.whatIsAt(new Coordinate(i,j))!=null){
-          ans.append(toDisplay.whatIsAt(new Coordinate(i,j)));
-        }else{
-          ans.append(" ");
-        }
-        bar = "|";
+      for(int j =0; j< toDisplay.getWidth()-1; j++){
+        ans.append(" |");
       }
+      ans.append("  ");
       ans.append((char)(alphabetic + i));
       ans.append('\n');
     }

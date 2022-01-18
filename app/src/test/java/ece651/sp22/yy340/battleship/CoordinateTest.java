@@ -1,7 +1,9 @@
 package ece651.sp22.yy340.battleship;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
 public class CoordinateTest {
@@ -25,8 +27,8 @@ public class CoordinateTest {
     Coordinate c2 = new Coordinate(1, 2);
     Coordinate c3 = new Coordinate(1, 3);
     Coordinate c4 = new Coordinate(3, 2);
-    assertEquals("(1,2)", c1.toString());
-    assertEquals("(1,2)", c2.toString());
+    assertEquals("(1, 2)", c1.toString());
+    assertEquals("(1, 2)", c2.toString());
     assertEquals(c1.toString(), c2.toString());
     assertNotEquals(c3.toString(),c4.toString());
     assertNotEquals(c2.toString(), c3.toString());
@@ -48,15 +50,21 @@ public class CoordinateTest {
     Coordinate c1 = new Coordinate("B3");
     assertEquals(1, c1.getRow());
     assertEquals(3, c1.getColumn());
-    Coordinate c2 = new Coordinate("D5");
-    assertEquals(3, c2.getRow());
-    assertEquals(5, c2.getColumn());
-    Coordinate c3 = new Coordinate("A9");
-    assertEquals(0, c3.getRow());
-    assertEquals(9, c3.getColumn());
-    Coordinate c4 = new Coordinate("Z0");
-    assertEquals(25, c4.getRow());
-    assertEquals(0, c4.getColumn());
+     Coordinate c2 = new Coordinate("b3");
+    assertEquals(1, c2.getRow());
+    assertEquals(3, c2.getColumn());
+    Coordinate c3 = new Coordinate("D5");
+    assertEquals(3, c3.getRow());
+    assertEquals(5, c3.getColumn());
+    Coordinate c4 = new Coordinate("d5");
+    assertEquals(3, c4.getRow());
+    assertEquals(5, c4.getColumn());
+    Coordinate c5 = new Coordinate("A9");
+    assertEquals(0, c5.getRow());
+    assertEquals(9, c5.getColumn());
+    Coordinate c6 = new Coordinate("Z0");
+    assertEquals(25, c6.getRow());
+    assertEquals(0, c6.getColumn());
 
   }
 
