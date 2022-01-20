@@ -1,16 +1,29 @@
 package ece651.sp22.yy340.battleship;
 
-public class BasicShip implements Ship <Character> {
+import java.util.HashMap;
 
-  private final Coordinate myLocation;
-  BasicShip(Coordinate where){
-    myLocation = where;
+public abstract class BasicShip<T> implements Ship<T> {
+
+  protected HashMap<Coordinate, Boolean> myPieces;
+  protected ShipDisplayInfo<T> myDisplayInfo;
+
+  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo) {
+    this.myPieces = new HashMap<Coordinate, Boolean>();
+    this.myDisplayInfo = myDisplayInfo;
+    for (Coordinate c : where) {
+      this.myPieces.put(c, false);
+    }
   }
-  
+
   @Override
   public boolean occupiesCoordinates(Coordinate where) {
-    
-    return where.equals(myLocation);
+
+    if (this.myPieces.get(where) != null) {
+      return true;
+    } else {
+      return false;
+    }
+
   }
 
   @Override
@@ -22,7 +35,7 @@ public class BasicShip implements Ship <Character> {
   @Override
   public void recordHitAt(Coordinate where) {
     // TODO Auto-generated method stub
-    
+
   }
 
   @Override
@@ -32,9 +45,10 @@ public class BasicShip implements Ship <Character> {
   }
 
   @Override
-  public Character getDisplayInfoAt(Coordinate where) {
+  public T getDisplayInfoAt(Coordinate where) {
     // TODO Auto-generated method stub
-    return 's';
+    // look up the hit status of this coordinate
+    return myDisplayInfo.getInfo(where, false);
   }
 
 }

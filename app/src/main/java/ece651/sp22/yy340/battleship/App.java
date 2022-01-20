@@ -5,9 +5,9 @@ package ece651.sp22.yy340.battleship;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.Reader;
-import java.io.InputStreamReader;
 
 public class App {
   final Board<Character> theBoard;
@@ -28,13 +28,12 @@ public class App {
     return new Placement(s);
   }
 
-  public void doOnePlacement() throws IOException{
+  public void doOnePlacement() throws IOException {
     Placement pos = readPlacement("Where would you like to put your ship?");
-    Ship<Character> s = new BasicShip(pos.getWhere());
+    RectangleShip<Character> s = new RectangleShip<Character>(pos.getWhere(), 's', '*');
     theBoard.tryAddShip(s);
     out.print(view.displayMyOwnBoard());
   }
-
 
   public static void main(String[] args) throws IOException {
     System.out.println("What to do next?\n");
