@@ -15,6 +15,12 @@ public abstract class BasicShip<T> implements Ship<T> {
     }
   }
 
+  protected void checkCoordinateInThisShip(Coordinate c) {
+    if (myPieces.get(c) == null) {
+      throw new IllegalArgumentException("The coordinate is not on ship!\n");
+    }
+  }
+
   @Override
   public boolean occupiesCoordinates(Coordinate where) {
 
@@ -29,26 +35,36 @@ public abstract class BasicShip<T> implements Ship<T> {
   @Override
   public boolean isSunk() {
     // TODO Auto-generated method stub
+    for (boolean ans : myPieces.values()) {
+      if (ans == true) {
+        return true;
+      }
+    }
     return false;
   }
 
   @Override
   public void recordHitAt(Coordinate where) {
     // TODO Auto-generated method stub
+    checkCoordinateInThisShip(where);
+    myPieces.put(where, true);
 
   }
 
   @Override
   public boolean wasHitAt(Coordinate where) {
     // TODO Auto-generated method stub
-    return false;
+    checkCoordinateInThisShip(where);
+    return myPieces.get(where);
+
   }
 
   @Override
   public T getDisplayInfoAt(Coordinate where) {
     // TODO Auto-generated method stub
     // look up the hit status of this coordinate
-    return myDisplayInfo.getInfo(where, false);
+    checkCoordinateInThisShip(where);
+    return myDisplayInfo.getInfo(where, myPieces.get(where));
   }
 
 }
