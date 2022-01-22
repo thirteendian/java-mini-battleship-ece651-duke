@@ -3,6 +3,13 @@ package ece651.sp22.yy340.battleship;
 import java.util.HashSet;
 
 public class RectangleShip<T> extends BasicShip<T> {
+
+  final String name;
+
+  public String getName() {
+    return this.name;
+  }
+
   /*
    * This method should generate the set of coordinates for a rectangle starting
    * at upperLeft whose width and height are as specified. E.g. if upperLeft =
@@ -19,16 +26,17 @@ public class RectangleShip<T> extends BasicShip<T> {
     return set_of_Coordinates;
   }
 
-  public RectangleShip(Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> displayInfo) {
+  public RectangleShip(String name, Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> displayInfo) {
     super(makeCoords(upperLeft, width, height), displayInfo);
+    this.name = name;
   }
 
-  public RectangleShip(Coordinate upperLeft, int width, int height, T data, T onHit) {
-    this(upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
+  public RectangleShip(String name, Coordinate upperLeft, int width, int height, T data, T onHit) {
+    this(name, upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
   }
 
   public RectangleShip(Coordinate upperLeft, T data, T onHit) {
-    this(upperLeft, 1, 1, data, onHit);
+    this("testship", upperLeft, 1, 1, data, onHit);
   }
 
 }

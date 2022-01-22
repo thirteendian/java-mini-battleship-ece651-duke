@@ -44,7 +44,12 @@ class AppTest {
     Board<Character> b = new BattleShipBoard<Character>(3, 4);
     BoardTextView view = new BoardTextView(b);
     App app = new App(b, sr, ps);
-    String expected = "  0|1|2\n" + "A  |s|  A\n" + "B  | |  B\n" + "C  | |  C\n" + "D  | |s D\n" + "  0|1|2\n";
+    String expected = "  0|1|2\n" +
+      "A  |d|d A\n" +
+      "B  | |  B\n" +
+      "C  | |  C\n" +
+      "D  | |d D\n" +
+      "  0|1|2\n";
     app.doOnePlacement();
     bytes.reset();
     app.doOnePlacement();
