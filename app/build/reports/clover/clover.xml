@@ -1,193 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644040729746" clover="4.4.1">
-   <project name="app" timestamp="1644040729660">
-      <metrics coveredelements="560" complexity="123" loc="1185" methods="81" classes="23" statements="431" packages="1" coveredconditionals="55" coveredmethods="80" elements="572" ncloc="831" files="23" conditionals="60" coveredstatements="425"/>
+<coverage generated="1644044073168" clover="4.4.1">
+   <project name="app" timestamp="1644044073087">
+      <metrics coveredelements="582" complexity="127" loc="1231" methods="84" classes="25" statements="448" packages="1" coveredconditionals="57" coveredmethods="83" elements="594" ncloc="866" files="25" conditionals="62" coveredstatements="442"/>
       <package name="ece651.sp22.yy340.battleship">
-         <metrics coveredelements="560" complexity="123" loc="1185" methods="81" classes="23" statements="431" coveredconditionals="55" coveredmethods="80" elements="572" ncloc="831" files="23" conditionals="60" coveredstatements="425"/>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/InBoundsRuleChecker.java" name="InBoundsRuleChecker.java">
-            <metrics coveredelements="11" coveredconditionals="2" complexity="6" loc="22" coveredmethods="2" methods="2" elements="11" classes="1" ncloc="17" statements="7" conditionals="2" coveredstatements="7"/>
-            <class name="InBoundsRuleChecker">
-               <metrics coveredelements="11" coveredconditionals="2" complexity="6" coveredmethods="2" methods="2" elements="11" statements="7" conditionals="2" coveredstatements="7"/>
+         <metrics coveredelements="582" complexity="127" loc="1231" methods="84" classes="25" statements="448" coveredconditionals="57" coveredmethods="83" elements="594" ncloc="866" files="25" conditionals="62" coveredstatements="442"/>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/NoCollisionRuleChecker.java" name="NoCollisionRuleChecker.java">
+            <metrics coveredelements="9" coveredconditionals="2" complexity="3" loc="18" coveredmethods="2" methods="2" elements="9" classes="1" ncloc="15" statements="5" conditionals="2" coveredstatements="5"/>
+            <class name="NoCollisionRuleChecker">
+               <metrics coveredelements="9" coveredconditionals="2" complexity="3" coveredmethods="2" methods="2" elements="9" statements="5" conditionals="2" coveredstatements="5"/>
             </class>
-            <line complexity="1" visibility="public" signature="InBoundsRuleChecker(PlacementRuleChecker&lt;T&gt;)" num="5" count="11" type="method"/>
-            <line num="6" count="11" type="stmt"/>
-            <line complexity="5" visibility="protected" signature="checkMyRule(Ship&lt;T&gt;,Board&lt;T&gt;) : boolean" num="9" count="3" type="method"/>
-            <line num="12" count="3" type="stmt"/>
-            <line num="13" count="3" type="stmt"/>
-            <line num="14" count="3" type="stmt"/>
-            <line num="15" count="7" type="stmt"/>
-            <line falsecount="6" truecount="1" num="15" type="cond"/>
-            <line num="16" count="1" type="stmt"/>
-            <line num="19" count="2" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/ShipDisplayInfo.java" name="ShipDisplayInfo.java">
-            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="5" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="4" statements="0" conditionals="0" coveredstatements="0"/>
-            <class name="ShipDisplayInfo">
-               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
-            </class>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/AbstractShipFactory.java" name="AbstractShipFactory.java">
-            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="41" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="7" statements="0" conditionals="0" coveredstatements="0"/>
-            <class name="AbstractShipFactory">
-               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
-            </class>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/RectangleShip.java" name="RectangleShip.java">
-            <metrics coveredelements="20" coveredconditionals="4" complexity="7" loc="42" coveredmethods="5" methods="5" elements="20" classes="1" ncloc="28" statements="11" conditionals="4" coveredstatements="11"/>
-            <class name="RectangleShip">
-               <metrics coveredelements="20" coveredconditionals="4" complexity="7" coveredmethods="5" methods="5" elements="20" statements="11" conditionals="4" coveredstatements="11"/>
-            </class>
-            <line complexity="1" visibility="public" signature="getName() : String" num="9" count="5" type="method"/>
-            <line num="10" count="5" type="stmt"/>
-            <line complexity="3" visibility="package" signature="makeCoords(Coordinate,int,int) : HashSet&lt;Coordinate&gt;" num="18" count="22" type="method"/>
-            <line num="19" count="22" type="stmt"/>
-            <line num="20" count="22" type="stmt"/>
-            <line falsecount="22" truecount="54" num="20" type="cond"/>
-            <line num="21" count="54" type="stmt"/>
-            <line falsecount="54" truecount="74" num="21" type="cond"/>
-            <line num="22" count="74" type="stmt"/>
-            <line num="23" count="74" type="stmt"/>
-            <line num="26" count="22" type="stmt"/>
-            <line complexity="1" visibility="public" signature="RectangleShip(String,Coordinate,int,int,ShipDisplayInfo&lt;T&gt;)" num="29" count="21" type="method"/>
-            <line num="30" count="21" type="stmt"/>
-            <line num="31" count="21" type="stmt"/>
-            <line complexity="1" visibility="public" signature="RectangleShip(String,Coordinate,int,int,T,T)" num="34" count="20" type="method"/>
-            <line num="35" count="20" type="stmt"/>
-            <line complexity="1" visibility="public" signature="RectangleShip(Coordinate,T,T)" num="38" count="5" type="method"/>
-            <line num="39" count="5" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Board.java" name="Board.java">
-            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="12" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="7" statements="0" conditionals="0" coveredstatements="0"/>
-            <class name="Board">
-               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
-            </class>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/SimpleShipDisplayInfo.java" name="SimpleShipDisplayInfo.java">
-            <metrics coveredelements="7" coveredconditionals="1" complexity="3" loc="22" coveredmethods="2" methods="2" elements="9" classes="1" ncloc="17" statements="5" conditionals="2" coveredstatements="4"/>
-            <class name="SimpleShipDisplayInfo">
-               <metrics coveredelements="7" coveredconditionals="1" complexity="3" coveredmethods="2" methods="2" elements="9" statements="5" conditionals="2" coveredstatements="4"/>
-            </class>
-            <line complexity="1" visibility="public" signature="SimpleShipDisplayInfo(T,T)" num="7" count="21" type="method"/>
-            <line num="8" count="21" type="stmt"/>
-            <line num="9" count="21" type="stmt"/>
-            <line complexity="2" visibility="public" signature="getInfo(Coordinate,boolean) : T" num="12" count="32" type="method"/>
-            <line num="15" count="32" type="stmt"/>
-            <line falsecount="32" truecount="0" num="15" type="cond"/>
-            <line num="16" count="0" type="stmt"/>
-            <line num="18" count="32" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/BasicShip.java" name="BasicShip.java">
-            <metrics coveredelements="34" coveredconditionals="6" complexity="11" loc="75" coveredmethods="8" methods="8" elements="34" classes="1" ncloc="54" statements="20" conditionals="6" coveredstatements="20"/>
-            <class name="BasicShip">
-               <metrics coveredelements="34" coveredconditionals="6" complexity="11" coveredmethods="8" methods="8" elements="34" statements="20" conditionals="6" coveredstatements="20"/>
-            </class>
-            <line complexity="1" visibility="public" signature="BasicShip(Iterable&lt;Coordinate&gt;,ShipDisplayInfo&lt;T&gt;)" num="10" count="21" type="method"/>
-            <line num="11" count="21" type="stmt"/>
-            <line num="12" count="21" type="stmt"/>
-            <line num="13" count="21" type="stmt"/>
-            <line num="14" count="68" type="stmt"/>
-            <line complexity="2" visibility="protected" signature="checkCoordinateInThisShip(Coordinate) : void" num="18" count="38" type="method"/>
-            <line num="19" count="38" type="stmt"/>
-            <line falsecount="36" truecount="2" num="19" type="cond"/>
-            <line num="20" count="2" type="stmt"/>
-            <line complexity="2" visibility="public" signature="occupiesCoordinates(Coordinate) : boolean" num="24" count="1460" type="method"/>
-            <line num="27" count="1460" type="stmt"/>
-            <line falsecount="1422" truecount="38" num="27" type="cond"/>
-            <line num="28" count="38" type="stmt"/>
-            <line num="30" count="1422" type="stmt"/>
-            <line complexity="2" visibility="public" signature="isSunk() : boolean" num="35" count="2" type="method"/>
-            <line num="38" count="2" type="stmt"/>
-            <line num="39" count="4" type="stmt"/>
-            <line falsecount="3" truecount="1" num="39" type="cond"/>
-            <line num="40" count="1" type="stmt"/>
-            <line num="43" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="recordHitAt(Coordinate) : void" num="46" count="3" type="method"/>
-            <line num="49" count="3" type="stmt"/>
-            <line num="50" count="2" type="stmt"/>
-            <line complexity="1" visibility="public" signature="wasHitAt(Coordinate) : boolean" num="54" count="2" type="method"/>
-            <line num="57" count="2" type="stmt"/>
-            <line num="58" count="2" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getDisplayInfoAt(Coordinate) : T" num="62" count="32" type="method"/>
-            <line num="66" count="32" type="stmt"/>
-            <line num="67" count="32" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getCoordinates() : Iterable&lt;Coordinate&gt;" num="70" count="3" type="method"/>
-            <line num="72" count="3" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Placement.java" name="Placement.java">
-            <metrics coveredelements="35" coveredconditionals="8" complexity="17" loc="67" coveredmethods="7" methods="7" elements="35" classes="1" ncloc="46" statements="20" conditionals="8" coveredstatements="20"/>
-            <class name="Placement">
-               <metrics coveredelements="35" coveredconditionals="8" complexity="17" coveredmethods="7" methods="7" elements="35" statements="20" conditionals="8" coveredstatements="20"/>
-            </class>
-            <line complexity="5" visibility="public" signature="Placement(Coordinate,char)" num="10" count="19" type="method"/>
-            <line num="11" count="19" type="stmt"/>
-            <line falsecount="18" truecount="1" num="11" type="cond"/>
+            <line complexity="1" visibility="public" signature="NoCollisionRuleChecker(PlacementRuleChecker&lt;T&gt;)" num="4" count="1" type="method"/>
+            <line num="5" count="1" type="stmt"/>
+            <line complexity="2" visibility="protected" signature="checkMyRule(Ship&lt;T&gt;,Board&lt;T&gt;) : boolean" num="8" count="2" type="method"/>
+            <line num="10" count="2" type="stmt"/>
+            <line num="11" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="11" type="cond"/>
             <line num="12" count="1" type="stmt"/>
-            <line num="14" count="18" type="stmt"/>
-            <line num="15" count="18" type="stmt"/>
-            <line complexity="6" visibility="public" signature="Placement(String)" num="21" count="13" type="method"/>
-            <line num="22" count="13" type="stmt"/>
-            <line falsecount="11" truecount="2" num="22" type="cond"/>
-            <line num="23" count="2" type="stmt"/>
-            <line num="25" count="11" type="stmt"/>
-            <line num="26" count="11" type="stmt"/>
-            <line falsecount="10" truecount="1" num="26" type="cond"/>
-            <line num="27" count="1" type="stmt"/>
-            <line num="29" count="10" type="stmt"/>
-            <line num="30" count="10" type="stmt"/>
-            <line num="31" count="9" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getOrientation() : char" num="37" count="30" type="method"/>
-            <line num="38" count="30" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getWhere() : Coordinate" num="41" count="34" type="method"/>
-            <line num="42" count="34" type="stmt"/>
-            <line complexity="1" visibility="public" signature="toString() : String" num="48" count="6" type="method"/>
-            <line num="50" count="6" type="stmt"/>
-            <line complexity="2" visibility="public" signature="equals(Object) : boolean" num="53" count="10" type="method"/>
-            <line num="55" count="10" type="stmt"/>
-            <line falsecount="1" truecount="9" num="55" type="cond"/>
-            <line num="56" count="9" type="stmt"/>
-            <line num="57" count="9" type="stmt"/>
-            <line num="59" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="hashCode() : int" num="62" count="6" type="method"/>
-            <line num="64" count="6" type="stmt"/>
+            <line num="15" count="1" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/BattleShipBoard.java" name="BattleShipBoard.java">
-            <metrics coveredelements="27" coveredconditionals="6" complexity="8" loc="56" coveredmethods="5" methods="5" elements="27" classes="1" ncloc="38" statements="16" conditionals="6" coveredstatements="16"/>
-            <class name="BattleShipBoard">
-               <metrics coveredelements="27" coveredconditionals="6" complexity="8" coveredmethods="5" methods="5" elements="27" statements="16" conditionals="6" coveredstatements="16"/>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Ship.java" name="Ship.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="70" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="10" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="Ship">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
             </class>
-            <line complexity="1" visibility="public" signature="getWidth() : int" num="20" count="398" type="method"/>
-            <line num="21" count="398" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getHeight() : int" num="24" count="1316" type="method"/>
-            <line num="25" count="1316" type="stmt"/>
-            <line complexity="1" visibility="public" signature="tryAddShip(Ship&lt;T&gt;) : boolean" num="28" count="7" type="method"/>
-            <line num="29" count="7" type="stmt"/>
-            <line num="30" count="7" type="stmt"/>
-            <line complexity="3" visibility="public" signature="BattleShipBoard(int,int)" num="33" count="14" type="method"/>
-            <line num="35" count="14" type="stmt"/>
-            <line falsecount="12" truecount="2" num="35" type="cond"/>
-            <line num="36" count="2" type="stmt"/>
-            <line num="38" count="12" type="stmt"/>
-            <line falsecount="10" truecount="2" num="38" type="cond"/>
-            <line num="39" count="2" type="stmt"/>
-            <line num="41" count="10" type="stmt"/>
-            <line num="42" count="10" type="stmt"/>
-            <line num="43" count="10" type="stmt"/>
-            <line num="44" count="10" type="stmt"/>
-            <line complexity="2" visibility="public" signature="whatIsAt(Coordinate) : T" num="47" count="1428" type="method"/>
-            <line num="48" count="1428" type="stmt"/>
-            <line num="49" count="1448" type="stmt"/>
-            <line falsecount="1420" truecount="28" num="49" type="cond"/>
-            <line num="50" count="28" type="stmt"/>
-            <line num="53" count="1400" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Coordinate.java" name="Coordinate.java">
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/App.java" name="App.java">
+            <metrics coveredelements="20" coveredconditionals="0" complexity="4" loc="48" coveredmethods="4" methods="4" elements="20" classes="1" ncloc="37" statements="16" conditionals="0" coveredstatements="16"/>
+            <class name="App">
+               <metrics coveredelements="20" coveredconditionals="0" complexity="4" coveredmethods="4" methods="4" elements="20" statements="16" conditionals="0" coveredstatements="16"/>
+            </class>
+            <line complexity="1" visibility="public" signature="App(Board&lt;Character&gt;,Reader,PrintStream)" num="19" count="3" type="method"/>
+            <line num="20" count="3" type="stmt"/>
+            <line num="21" count="3" type="stmt"/>
+            <line num="22" count="3" type="stmt"/>
+            <line num="23" count="3" type="stmt"/>
+            <line num="24" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="readPlacement(String) : Placement" num="28" count="6" type="method"/>
+            <line num="29" count="6" type="stmt"/>
+            <line num="30" count="6" type="stmt"/>
+            <line num="31" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="doOnePlacement() : void" num="34" count="3" type="method"/>
+            <line num="35" count="3" type="stmt"/>
+            <line num="36" count="3" type="stmt"/>
+            <line num="37" count="3" type="stmt"/>
+            <line num="38" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="41" count="1" type="method"/>
+            <line num="42" count="1" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line num="44" count="1" type="stmt"/>
+            <line num="45" count="1" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Coordinate.java" name="Coordinate.java">
             <metrics coveredelements="37" coveredconditionals="10" complexity="14" loc="63" coveredmethods="7" methods="7" elements="37" classes="1" ncloc="47" statements="20" conditionals="10" coveredstatements="20"/>
             <class name="Coordinate">
                <metrics coveredelements="37" coveredconditionals="10" complexity="14" coveredmethods="7" methods="7" elements="37" statements="20" conditionals="10" coveredstatements="20"/>
             </class>
-            <line complexity="1" visibility="public" signature="Coordinate(int,int)" num="7" count="1560" type="method"/>
-            <line num="8" count="1560" type="stmt"/>
-            <line num="9" count="1560" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Coordinate(int,int)" num="7" count="1572" type="method"/>
+            <line num="8" count="1572" type="stmt"/>
+            <line num="9" count="1572" type="stmt"/>
             <line complexity="7" visibility="public" signature="Coordinate(String)" num="13" count="34" type="method"/>
             <line num="15" count="34" type="stmt"/>
             <line falsecount="32" truecount="2" num="15" type="cond"/>
@@ -203,22 +73,43 @@
             <line num="28" count="23" type="stmt"/>
             <line num="30" count="3" type="stmt"/>
             <line num="32" count="25" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getRow() : int" num="36" count="199" type="method"/>
-            <line num="37" count="199" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getColumn() : int" num="40" count="106" type="method"/>
-            <line num="41" count="106" type="stmt"/>
-            <line complexity="2" visibility="public" signature="equals(Object) : boolean" num="44" count="136" type="method"/>
-            <line num="46" count="136" type="stmt"/>
-            <line falsecount="1" truecount="135" num="46" type="cond"/>
-            <line num="47" count="135" type="stmt"/>
-            <line num="48" count="135" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getRow() : int" num="36" count="222" type="method"/>
+            <line num="37" count="222" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getColumn() : int" num="40" count="119" type="method"/>
+            <line num="41" count="119" type="stmt"/>
+            <line complexity="2" visibility="public" signature="equals(Object) : boolean" num="44" count="139" type="method"/>
+            <line num="46" count="139" type="stmt"/>
+            <line falsecount="1" truecount="138" num="46" type="cond"/>
+            <line num="47" count="138" type="stmt"/>
+            <line num="48" count="138" type="stmt"/>
             <line num="50" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="toString() : String" num="53" count="1711" type="method"/>
-            <line num="55" count="1711" type="stmt"/>
-            <line complexity="1" visibility="public" signature="hashCode() : int" num="58" count="1697" type="method"/>
-            <line num="60" count="1697" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="53" count="1737" type="method"/>
+            <line num="55" count="1737" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="58" count="1723" type="method"/>
+            <line num="60" count="1723" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/BoardTextView.java" name="BoardTextView.java">
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/V1ShipFactory.java" name="V1ShipFactory.java">
+            <metrics coveredelements="16" coveredconditionals="2" complexity="6" loc="42" coveredmethods="5" methods="5" elements="16" classes="1" ncloc="27" statements="9" conditionals="2" coveredstatements="9"/>
+            <class name="V1ShipFactory">
+               <metrics coveredelements="16" coveredconditionals="2" complexity="6" coveredmethods="5" methods="5" elements="16" statements="9" conditionals="2" coveredstatements="9"/>
+            </class>
+            <line complexity="2" visibility="protected" signature="createShip(Placement,int,int,char,String) : Ship&lt;Character&gt;" num="5" count="13" type="method"/>
+            <line num="7" count="13" type="stmt"/>
+            <line falsecount="11" truecount="2" num="7" type="cond"/>
+            <line num="8" count="2" type="stmt"/>
+            <line num="9" count="2" type="stmt"/>
+            <line num="10" count="2" type="stmt"/>
+            <line num="12" count="13" type="stmt"/>
+            <line complexity="1" visibility="public" signature="makeSubmarine(Placement) : Ship&lt;Character&gt;" num="15" count="1" type="method"/>
+            <line num="18" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="makeBattleship(Placement) : Ship&lt;Character&gt;" num="21" count="1" type="method"/>
+            <line num="24" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="makeCarrier(Placement) : Ship&lt;Character&gt;" num="28" count="1" type="method"/>
+            <line num="31" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="makeDestroyer(Placement) : Ship&lt;Character&gt;" num="35" count="10" type="method"/>
+            <line num="38" count="10" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/BoardTextView.java" name="BoardTextView.java">
             <metrics coveredelements="44" coveredconditionals="10" complexity="10" loc="87" coveredmethods="4" methods="4" elements="44" classes="1" ncloc="49" statements="30" conditionals="10" coveredstatements="30"/>
             <class name="BoardTextView">
                <metrics coveredelements="44" coveredconditionals="10" complexity="10" coveredmethods="4" methods="4" elements="44" statements="30" conditionals="10" coveredstatements="30"/>
@@ -263,66 +154,43 @@
             <line num="83" count="37" type="stmt"/>
             <line num="85" count="6" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/V1ShipFactory.java" name="V1ShipFactory.java">
-            <metrics coveredelements="16" coveredconditionals="2" complexity="6" loc="42" coveredmethods="5" methods="5" elements="16" classes="1" ncloc="27" statements="9" conditionals="2" coveredstatements="9"/>
-            <class name="V1ShipFactory">
-               <metrics coveredelements="16" coveredconditionals="2" complexity="6" coveredmethods="5" methods="5" elements="16" statements="9" conditionals="2" coveredstatements="9"/>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/BattleShipBoard.java" name="BattleShipBoard.java">
+            <metrics coveredelements="27" coveredconditionals="6" complexity="8" loc="56" coveredmethods="5" methods="5" elements="27" classes="1" ncloc="38" statements="16" conditionals="6" coveredstatements="16"/>
+            <class name="BattleShipBoard">
+               <metrics coveredelements="27" coveredconditionals="6" complexity="8" coveredmethods="5" methods="5" elements="27" statements="16" conditionals="6" coveredstatements="16"/>
             </class>
-            <line complexity="2" visibility="protected" signature="createShip(Placement,int,int,char,String) : Ship&lt;Character&gt;" num="5" count="10" type="method"/>
-            <line num="7" count="10" type="stmt"/>
-            <line falsecount="9" truecount="1" num="7" type="cond"/>
-            <line num="8" count="1" type="stmt"/>
-            <line num="9" count="1" type="stmt"/>
-            <line num="10" count="1" type="stmt"/>
-            <line num="12" count="10" type="stmt"/>
-            <line complexity="1" visibility="public" signature="makeSubmarine(Placement) : Ship&lt;Character&gt;" num="15" count="1" type="method"/>
-            <line num="18" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="makeBattleship(Placement) : Ship&lt;Character&gt;" num="21" count="1" type="method"/>
-            <line num="24" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="makeCarrier(Placement) : Ship&lt;Character&gt;" num="28" count="1" type="method"/>
-            <line num="31" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="makeDestroyer(Placement) : Ship&lt;Character&gt;" num="35" count="7" type="method"/>
-            <line num="38" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getWidth() : int" num="20" count="398" type="method"/>
+            <line num="21" count="398" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getHeight() : int" num="24" count="1316" type="method"/>
+            <line num="25" count="1316" type="stmt"/>
+            <line complexity="1" visibility="public" signature="tryAddShip(Ship&lt;T&gt;) : boolean" num="28" count="8" type="method"/>
+            <line num="29" count="8" type="stmt"/>
+            <line num="30" count="8" type="stmt"/>
+            <line complexity="3" visibility="public" signature="BattleShipBoard(int,int)" num="33" count="15" type="method"/>
+            <line num="35" count="15" type="stmt"/>
+            <line falsecount="13" truecount="2" num="35" type="cond"/>
+            <line num="36" count="2" type="stmt"/>
+            <line num="38" count="13" type="stmt"/>
+            <line falsecount="11" truecount="2" num="38" type="cond"/>
+            <line num="39" count="2" type="stmt"/>
+            <line num="41" count="11" type="stmt"/>
+            <line num="42" count="11" type="stmt"/>
+            <line num="43" count="11" type="stmt"/>
+            <line num="44" count="11" type="stmt"/>
+            <line complexity="2" visibility="public" signature="whatIsAt(Coordinate) : T" num="47" count="1434" type="method"/>
+            <line num="48" count="1434" type="stmt"/>
+            <line num="49" count="1454" type="stmt"/>
+            <line falsecount="1425" truecount="29" num="49" type="cond"/>
+            <line num="50" count="29" type="stmt"/>
+            <line num="53" count="1405" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Ship.java" name="Ship.java">
-            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="70" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="10" statements="0" conditionals="0" coveredstatements="0"/>
-            <class name="Ship">
-               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
-            </class>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/App.java" name="App.java">
-            <metrics coveredelements="20" coveredconditionals="0" complexity="4" loc="48" coveredmethods="4" methods="4" elements="20" classes="1" ncloc="37" statements="16" conditionals="0" coveredstatements="16"/>
-            <class name="App">
-               <metrics coveredelements="20" coveredconditionals="0" complexity="4" coveredmethods="4" methods="4" elements="20" statements="16" conditionals="0" coveredstatements="16"/>
-            </class>
-            <line complexity="1" visibility="public" signature="App(Board&lt;Character&gt;,Reader,PrintStream)" num="19" count="3" type="method"/>
-            <line num="20" count="3" type="stmt"/>
-            <line num="21" count="3" type="stmt"/>
-            <line num="22" count="3" type="stmt"/>
-            <line num="23" count="3" type="stmt"/>
-            <line num="24" count="3" type="stmt"/>
-            <line complexity="1" visibility="public" signature="readPlacement(String) : Placement" num="28" count="6" type="method"/>
-            <line num="29" count="6" type="stmt"/>
-            <line num="30" count="6" type="stmt"/>
-            <line num="31" count="6" type="stmt"/>
-            <line complexity="1" visibility="public" signature="doOnePlacement() : void" num="34" count="3" type="method"/>
-            <line num="35" count="3" type="stmt"/>
-            <line num="36" count="3" type="stmt"/>
-            <line num="37" count="3" type="stmt"/>
-            <line num="38" count="3" type="stmt"/>
-            <line complexity="1" visibility="public" signature="main(String[]) : void" num="41" count="1" type="method"/>
-            <line num="42" count="1" type="stmt"/>
-            <line num="43" count="1" type="stmt"/>
-            <line num="44" count="1" type="stmt"/>
-            <line num="45" count="1" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/PlacementRuleChecker.java" name="PlacementRuleChecker.java">
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/PlacementRuleChecker.java" name="PlacementRuleChecker.java">
             <metrics coveredelements="2" coveredconditionals="0" complexity="4" loc="24" coveredmethods="1" methods="2" elements="12" classes="1" ncloc="17" statements="6" conditionals="4" coveredstatements="1"/>
             <class name="PlacementRuleChecker">
                <metrics coveredelements="2" coveredconditionals="0" complexity="4" coveredmethods="1" methods="2" elements="12" statements="6" conditionals="4" coveredstatements="1"/>
             </class>
-            <line complexity="1" visibility="public" signature="PlacementRuleChecker(PlacementRuleChecker&lt;T&gt;)" num="6" count="11" type="method"/>
-            <line num="7" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="PlacementRuleChecker(PlacementRuleChecker&lt;T&gt;)" num="6" count="13" type="method"/>
+            <line num="7" count="13" type="stmt"/>
             <line complexity="3" visibility="public" signature="checkPlacement(Ship&lt;T&gt;,Board&lt;T&gt;) : boolean" num="12" count="0" type="method"/>
             <line num="14" count="0" type="stmt"/>
             <line falsecount="0" truecount="0" num="14" type="cond"/>
@@ -332,69 +200,234 @@
             <line num="19" count="0" type="stmt"/>
             <line num="22" count="0" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/BoardTextViewTest.java" name="BoardTextViewTest.java">
-            <metrics coveredelements="24" coveredconditionals="0" complexity="3" loc="46" coveredmethods="3" methods="3" elements="24" classes="1" ncloc="36" statements="21" conditionals="0" coveredstatements="21"/>
-            <class name="BoardTextViewTest">
-               <metrics coveredelements="24" coveredconditionals="0" complexity="3" coveredmethods="3" methods="3" elements="24" statements="21" conditionals="0" coveredstatements="21"/>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/ShipDisplayInfo.java" name="ShipDisplayInfo.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="5" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="4" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="ShipDisplayInfo">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
             </class>
-            <line complexity="1" visibility="public" signature="test_display_empty_2by2() : void" num="10" count="1" type="method"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/BasicShip.java" name="BasicShip.java">
+            <metrics coveredelements="34" coveredconditionals="6" complexity="11" loc="75" coveredmethods="8" methods="8" elements="34" classes="1" ncloc="54" statements="20" conditionals="6" coveredstatements="20"/>
+            <class name="BasicShip">
+               <metrics coveredelements="34" coveredconditionals="6" complexity="11" coveredmethods="8" methods="8" elements="34" statements="20" conditionals="6" coveredstatements="20"/>
+            </class>
+            <line complexity="1" visibility="public" signature="BasicShip(Iterable&lt;Coordinate&gt;,ShipDisplayInfo&lt;T&gt;)" num="10" count="24" type="method"/>
+            <line num="11" count="24" type="stmt"/>
+            <line num="12" count="24" type="stmt"/>
+            <line num="13" count="24" type="stmt"/>
+            <line num="14" count="77" type="stmt"/>
+            <line complexity="2" visibility="protected" signature="checkCoordinateInThisShip(Coordinate) : void" num="18" count="39" type="method"/>
+            <line num="19" count="39" type="stmt"/>
+            <line falsecount="37" truecount="2" num="19" type="cond"/>
+            <line num="20" count="2" type="stmt"/>
+            <line complexity="2" visibility="public" signature="occupiesCoordinates(Coordinate) : boolean" num="24" count="1466" type="method"/>
+            <line num="27" count="1466" type="stmt"/>
+            <line falsecount="1427" truecount="39" num="27" type="cond"/>
+            <line num="28" count="39" type="stmt"/>
+            <line num="30" count="1427" type="stmt"/>
+            <line complexity="2" visibility="public" signature="isSunk() : boolean" num="35" count="2" type="method"/>
+            <line num="38" count="2" type="stmt"/>
+            <line num="39" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="39" type="cond"/>
+            <line num="40" count="1" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="recordHitAt(Coordinate) : void" num="46" count="3" type="method"/>
+            <line num="49" count="3" type="stmt"/>
+            <line num="50" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="wasHitAt(Coordinate) : boolean" num="54" count="2" type="method"/>
+            <line num="57" count="2" type="stmt"/>
+            <line num="58" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getDisplayInfoAt(Coordinate) : T" num="62" count="33" type="method"/>
+            <line num="66" count="33" type="stmt"/>
+            <line num="67" count="33" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getCoordinates() : Iterable&lt;Coordinate&gt;" num="70" count="5" type="method"/>
+            <line num="72" count="5" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/InBoundsRuleChecker.java" name="InBoundsRuleChecker.java">
+            <metrics coveredelements="11" coveredconditionals="2" complexity="6" loc="22" coveredmethods="2" methods="2" elements="11" classes="1" ncloc="17" statements="7" conditionals="2" coveredstatements="7"/>
+            <class name="InBoundsRuleChecker">
+               <metrics coveredelements="11" coveredconditionals="2" complexity="6" coveredmethods="2" methods="2" elements="11" statements="7" conditionals="2" coveredstatements="7"/>
+            </class>
+            <line complexity="1" visibility="public" signature="InBoundsRuleChecker(PlacementRuleChecker&lt;T&gt;)" num="5" count="12" type="method"/>
+            <line num="6" count="12" type="stmt"/>
+            <line complexity="5" visibility="protected" signature="checkMyRule(Ship&lt;T&gt;,Board&lt;T&gt;) : boolean" num="9" count="3" type="method"/>
+            <line num="12" count="3" type="stmt"/>
+            <line num="13" count="3" type="stmt"/>
+            <line num="14" count="3" type="stmt"/>
+            <line num="15" count="7" type="stmt"/>
+            <line falsecount="6" truecount="1" num="15" type="cond"/>
+            <line num="16" count="1" type="stmt"/>
+            <line num="19" count="2" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Board.java" name="Board.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="12" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="7" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="Board">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/AbstractShipFactory.java" name="AbstractShipFactory.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="41" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="7" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="AbstractShipFactory">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/RectangleShip.java" name="RectangleShip.java">
+            <metrics coveredelements="20" coveredconditionals="4" complexity="7" loc="42" coveredmethods="5" methods="5" elements="20" classes="1" ncloc="28" statements="11" conditionals="4" coveredstatements="11"/>
+            <class name="RectangleShip">
+               <metrics coveredelements="20" coveredconditionals="4" complexity="7" coveredmethods="5" methods="5" elements="20" statements="11" conditionals="4" coveredstatements="11"/>
+            </class>
+            <line complexity="1" visibility="public" signature="getName() : String" num="9" count="5" type="method"/>
+            <line num="10" count="5" type="stmt"/>
+            <line complexity="3" visibility="package" signature="makeCoords(Coordinate,int,int) : HashSet&lt;Coordinate&gt;" num="18" count="25" type="method"/>
+            <line num="19" count="25" type="stmt"/>
+            <line num="20" count="25" type="stmt"/>
+            <line falsecount="25" truecount="61" num="20" type="cond"/>
+            <line num="21" count="61" type="stmt"/>
+            <line falsecount="61" truecount="83" num="21" type="cond"/>
+            <line num="22" count="83" type="stmt"/>
+            <line num="23" count="83" type="stmt"/>
+            <line num="26" count="25" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RectangleShip(String,Coordinate,int,int,ShipDisplayInfo&lt;T&gt;)" num="29" count="24" type="method"/>
+            <line num="30" count="24" type="stmt"/>
+            <line num="31" count="24" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RectangleShip(String,Coordinate,int,int,T,T)" num="34" count="23" type="method"/>
+            <line num="35" count="23" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RectangleShip(Coordinate,T,T)" num="38" count="5" type="method"/>
+            <line num="39" count="5" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Placement.java" name="Placement.java">
+            <metrics coveredelements="35" coveredconditionals="8" complexity="17" loc="67" coveredmethods="7" methods="7" elements="35" classes="1" ncloc="46" statements="20" conditionals="8" coveredstatements="20"/>
+            <class name="Placement">
+               <metrics coveredelements="35" coveredconditionals="8" complexity="17" coveredmethods="7" methods="7" elements="35" statements="20" conditionals="8" coveredstatements="20"/>
+            </class>
+            <line complexity="5" visibility="public" signature="Placement(Coordinate,char)" num="10" count="22" type="method"/>
+            <line num="11" count="22" type="stmt"/>
+            <line falsecount="21" truecount="1" num="11" type="cond"/>
+            <line num="12" count="1" type="stmt"/>
+            <line num="14" count="21" type="stmt"/>
+            <line num="15" count="21" type="stmt"/>
+            <line complexity="6" visibility="public" signature="Placement(String)" num="21" count="13" type="method"/>
+            <line num="22" count="13" type="stmt"/>
+            <line falsecount="11" truecount="2" num="22" type="cond"/>
+            <line num="23" count="2" type="stmt"/>
+            <line num="25" count="11" type="stmt"/>
+            <line num="26" count="11" type="stmt"/>
+            <line falsecount="10" truecount="1" num="26" type="cond"/>
+            <line num="27" count="1" type="stmt"/>
+            <line num="29" count="10" type="stmt"/>
+            <line num="30" count="10" type="stmt"/>
+            <line num="31" count="9" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getOrientation() : char" num="37" count="33" type="method"/>
+            <line num="38" count="33" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getWhere() : Coordinate" num="41" count="37" type="method"/>
+            <line num="42" count="37" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="48" count="6" type="method"/>
+            <line num="50" count="6" type="stmt"/>
+            <line complexity="2" visibility="public" signature="equals(Object) : boolean" num="53" count="10" type="method"/>
+            <line num="55" count="10" type="stmt"/>
+            <line falsecount="1" truecount="9" num="55" type="cond"/>
+            <line num="56" count="9" type="stmt"/>
+            <line num="57" count="9" type="stmt"/>
+            <line num="59" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="62" count="6" type="method"/>
+            <line num="64" count="6" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/SimpleShipDisplayInfo.java" name="SimpleShipDisplayInfo.java">
+            <metrics coveredelements="7" coveredconditionals="1" complexity="3" loc="22" coveredmethods="2" methods="2" elements="9" classes="1" ncloc="17" statements="5" conditionals="2" coveredstatements="4"/>
+            <class name="SimpleShipDisplayInfo">
+               <metrics coveredelements="7" coveredconditionals="1" complexity="3" coveredmethods="2" methods="2" elements="9" statements="5" conditionals="2" coveredstatements="4"/>
+            </class>
+            <line complexity="1" visibility="public" signature="SimpleShipDisplayInfo(T,T)" num="7" count="24" type="method"/>
+            <line num="8" count="24" type="stmt"/>
+            <line num="9" count="24" type="stmt"/>
+            <line complexity="2" visibility="public" signature="getInfo(Coordinate,boolean) : T" num="12" count="33" type="method"/>
+            <line num="15" count="33" type="stmt"/>
+            <line falsecount="33" truecount="0" num="15" type="cond"/>
+            <line num="16" count="0" type="stmt"/>
+            <line num="18" count="33" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/InBoundsRuleCheckerTest.java" name="InBoundsRuleCheckerTest.java">
+            <metrics coveredelements="13" coveredconditionals="0" complexity="1" loc="26" coveredmethods="1" methods="1" elements="13" classes="1" ncloc="20" statements="12" conditionals="0" coveredstatements="12"/>
+            <class name="InBoundsRuleCheckerTest">
+               <metrics coveredelements="13" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="13" statements="12" conditionals="0" coveredstatements="12"/>
+            </class>
+            <line complexity="1" visibility="public" signature="test_InBoundRuleChecker() : void" num="8" count="1" type="method"/>
+            <line num="10" count="1" type="stmt"/>
+            <line num="11" count="1" type="stmt"/>
+            <line num="12" count="1" type="stmt"/>
+            <line num="14" count="1" type="stmt"/>
+            <line num="15" count="1" type="stmt"/>
+            <line num="16" count="1" type="stmt"/>
+            <line num="17" count="1" type="stmt"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="21" count="1" type="stmt"/>
+            <line num="22" count="1" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/PlacementTest.java" name="PlacementTest.java">
+            <metrics coveredelements="56" coveredconditionals="0" complexity="6" loc="85" coveredmethods="6" methods="6" elements="56" classes="1" ncloc="73" statements="50" conditionals="0" coveredstatements="50"/>
+            <class name="PlacementTest">
+               <metrics coveredelements="56" coveredconditionals="0" complexity="6" coveredmethods="6" methods="6" elements="56" statements="50" conditionals="0" coveredstatements="50"/>
+            </class>
+            <line complexity="1" visibility="public" signature="test_equals() : void" num="8" count="1" type="method"/>
+            <line num="10" count="1" type="stmt"/>
+            <line num="11" count="1" type="stmt"/>
             <line num="12" count="1" type="stmt"/>
             <line num="13" count="1" type="stmt"/>
             <line num="14" count="1" type="stmt"/>
             <line num="15" count="1" type="stmt"/>
             <line num="16" count="1" type="stmt"/>
             <line num="17" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="test_display_non_empty_4by3() : void" num="20" count="1" type="method"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="21" count="1" type="stmt"/>
             <line num="22" count="1" type="stmt"/>
             <line num="23" count="1" type="stmt"/>
-            <line num="24" count="1" type="stmt"/>
-            <line num="25" count="1" type="stmt"/>
-            <line num="27" count="1" type="stmt"/>
+            <line complexity="1" visibility="package" signature="test_hashCode() : void" num="26" count="1" type="method"/>
             <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
             <line num="30" count="1" type="stmt"/>
             <line num="31" count="1" type="stmt"/>
             <line num="32" count="1" type="stmt"/>
             <line num="33" count="1" type="stmt"/>
             <line num="34" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="test_invalid_board_size() : void" num="37" count="1" type="method"/>
-            <line num="39" count="1" type="stmt"/>
-            <line num="40" count="1" type="stmt"/>
-            <line num="42" count="1" type="stmt"/>
-            <line num="43" count="1" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/BattleShipBoardTest.java" name="BattleShipBoardTest.java">
-            <metrics coveredelements="28" coveredconditionals="4" complexity="6" loc="48" coveredmethods="4" methods="4" elements="28" classes="1" ncloc="39" statements="20" conditionals="4" coveredstatements="20"/>
-            <class name="BattleShipBoardTest">
-               <metrics coveredelements="28" coveredconditionals="4" complexity="6" coveredmethods="4" methods="4" elements="28" statements="20" conditionals="4" coveredstatements="20"/>
-            </class>
-            <line complexity="1" visibility="public" signature="test_width_and_height() : void" num="9" count="1" type="method"/>
-            <line num="11" count="1" type="stmt"/>
-            <line num="12" count="1" type="stmt"/>
-            <line num="13" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="test_invalid_dimensions() : void" num="16" count="1" type="method"/>
-            <line num="18" count="1" type="stmt"/>
-            <line num="19" count="1" type="stmt"/>
-            <line num="20" count="1" type="stmt"/>
-            <line num="21" count="1" type="stmt"/>
-            <line complexity="3" visibility="private" signature="checkWhatIsAtBoard(BattleShipBoard&lt;T&gt;,T[][]) : void" num="24" count="2" type="method"/>
-            <line num="25" count="2" type="stmt"/>
-            <line falsecount="2" truecount="60" num="25" type="cond"/>
-            <line num="26" count="60" type="stmt"/>
-            <line falsecount="60" truecount="1200" num="26" type="cond"/>
-            <line num="27" count="1200" type="stmt"/>
-            <line complexity="1" visibility="public" signature="test_Ship_Array() : void" num="32" count="1" type="method"/>
-            <line num="34" count="1" type="stmt"/>
             <line num="35" count="1" type="stmt"/>
             <line num="36" count="1" type="stmt"/>
             <line num="37" count="1" type="stmt"/>
-            <line num="38" count="1" type="stmt"/>
-            <line num="40" count="1" type="stmt"/>
-            <line num="41" count="1" type="stmt"/>
+            <line complexity="1" visibility="package" signature="test_getter() : void" num="40" count="1" type="method"/>
+            <line num="42" count="1" type="stmt"/>
             <line num="43" count="1" type="stmt"/>
             <line num="44" count="1" type="stmt"/>
             <line num="45" count="1" type="stmt"/>
+            <line num="46" count="1" type="stmt"/>
+            <line num="47" count="1" type="stmt"/>
+            <line num="48" count="1" type="stmt"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line num="52" count="1" type="stmt"/>
+            <line num="54" count="1" type="stmt"/>
+            <line num="55" count="1" type="stmt"/>
+            <line complexity="1" visibility="package" signature="test_string_constructor_valid_cases() : void" num="58" count="1" type="method"/>
+            <line num="60" count="1" type="stmt"/>
+            <line num="61" count="1" type="stmt"/>
+            <line num="62" count="1" type="stmt"/>
+            <line num="63" count="1" type="stmt"/>
+            <line num="64" count="1" type="stmt"/>
+            <line num="65" count="1" type="stmt"/>
+            <line num="66" count="1" type="stmt"/>
+            <line num="67" count="1" type="stmt"/>
+            <line num="68" count="1" type="stmt"/>
+            <line complexity="1" visibility="package" signature="test_string_constructor_error_cases() : void" num="72" count="1" type="method"/>
+            <line num="74" count="1" type="stmt"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="76" count="1" type="stmt"/>
+            <line num="77" count="1" type="stmt"/>
+            <line complexity="1" visibility="package" signature="test_wrong_input() : void" num="79" count="1" type="method"/>
+            <line num="81" count="1" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/AppTest.java" name="AppTest.java">
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/AppTest.java" name="AppTest.java">
             <metrics coveredelements="49" coveredconditionals="2" complexity="4" loc="83" coveredmethods="3" methods="3" elements="49" classes="1" ncloc="72" statements="44" conditionals="2" coveredstatements="44"/>
             <class name="AppTest">
                <metrics coveredelements="49" coveredconditionals="2" complexity="4" coveredmethods="3" methods="3" elements="49" statements="44" conditionals="2" coveredstatements="44"/>
@@ -448,7 +481,143 @@
             <line num="79" count="1" type="stmt"/>
             <line num="80" count="1" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/RectangleShipTest.java" name="RectangleShipTest.java">
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/CoordinateTest.java" name="CoordinateTest.java">
+            <metrics coveredelements="57" coveredconditionals="0" complexity="5" loc="82" coveredmethods="5" methods="5" elements="57" classes="1" ncloc="75" statements="52" conditionals="0" coveredstatements="52"/>
+            <class name="CoordinateTest">
+               <metrics coveredelements="57" coveredconditionals="0" complexity="5" coveredmethods="5" methods="5" elements="57" statements="52" conditionals="0" coveredstatements="52"/>
+            </class>
+            <line complexity="1" visibility="public" signature="test_equals() : void" num="10" count="1" type="method"/>
+            <line num="12" count="1" type="stmt"/>
+            <line num="13" count="1" type="stmt"/>
+            <line num="14" count="1" type="stmt"/>
+            <line num="15" count="1" type="stmt"/>
+            <line num="16" count="1" type="stmt"/>
+            <line num="17" count="1" type="stmt"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="21" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test_toString() : void" num="24" count="1" type="method"/>
+            <line num="26" count="1" type="stmt"/>
+            <line num="27" count="1" type="stmt"/>
+            <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+            <line num="31" count="1" type="stmt"/>
+            <line num="32" count="1" type="stmt"/>
+            <line num="33" count="1" type="stmt"/>
+            <line num="34" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test_hashCode() : void" num="37" count="1" type="method"/>
+            <line num="39" count="1" type="stmt"/>
+            <line num="40" count="1" type="stmt"/>
+            <line num="41" count="1" type="stmt"/>
+            <line num="42" count="1" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line num="44" count="1" type="stmt"/>
+            <line num="45" count="1" type="stmt"/>
+            <line complexity="1" visibility="package" signature="test_string_constructor_valid_cases() : void" num="48" count="1" type="method"/>
+            <line num="50" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line num="52" count="1" type="stmt"/>
+            <line num="53" count="1" type="stmt"/>
+            <line num="54" count="1" type="stmt"/>
+            <line num="55" count="1" type="stmt"/>
+            <line num="56" count="1" type="stmt"/>
+            <line num="57" count="1" type="stmt"/>
+            <line num="58" count="1" type="stmt"/>
+            <line num="59" count="1" type="stmt"/>
+            <line num="60" count="1" type="stmt"/>
+            <line num="61" count="1" type="stmt"/>
+            <line num="62" count="1" type="stmt"/>
+            <line num="63" count="1" type="stmt"/>
+            <line num="64" count="1" type="stmt"/>
+            <line num="65" count="1" type="stmt"/>
+            <line num="66" count="1" type="stmt"/>
+            <line num="67" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test_string_constructor_error_cases() : void" num="71" count="1" type="method"/>
+            <line num="73" count="1" type="stmt"/>
+            <line num="74" count="1" type="stmt"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="76" count="1" type="stmt"/>
+            <line num="77" count="1" type="stmt"/>
+            <line num="78" count="1" type="stmt"/>
+            <line num="79" count="1" type="stmt"/>
+            <line num="80" count="1" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/BattleShipBoardTest.java" name="BattleShipBoardTest.java">
+            <metrics coveredelements="28" coveredconditionals="4" complexity="6" loc="48" coveredmethods="4" methods="4" elements="28" classes="1" ncloc="39" statements="20" conditionals="4" coveredstatements="20"/>
+            <class name="BattleShipBoardTest">
+               <metrics coveredelements="28" coveredconditionals="4" complexity="6" coveredmethods="4" methods="4" elements="28" statements="20" conditionals="4" coveredstatements="20"/>
+            </class>
+            <line complexity="1" visibility="public" signature="test_width_and_height() : void" num="9" count="1" type="method"/>
+            <line num="11" count="1" type="stmt"/>
+            <line num="12" count="1" type="stmt"/>
+            <line num="13" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test_invalid_dimensions() : void" num="16" count="1" type="method"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="21" count="1" type="stmt"/>
+            <line complexity="3" visibility="private" signature="checkWhatIsAtBoard(BattleShipBoard&lt;T&gt;,T[][]) : void" num="24" count="2" type="method"/>
+            <line num="25" count="2" type="stmt"/>
+            <line falsecount="2" truecount="60" num="25" type="cond"/>
+            <line num="26" count="60" type="stmt"/>
+            <line falsecount="60" truecount="1200" num="26" type="cond"/>
+            <line num="27" count="1200" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test_Ship_Array() : void" num="32" count="1" type="method"/>
+            <line num="34" count="1" type="stmt"/>
+            <line num="35" count="1" type="stmt"/>
+            <line num="36" count="1" type="stmt"/>
+            <line num="37" count="1" type="stmt"/>
+            <line num="38" count="1" type="stmt"/>
+            <line num="40" count="1" type="stmt"/>
+            <line num="41" count="1" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line num="44" count="1" type="stmt"/>
+            <line num="45" count="1" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/V1ShipFactoryTest.java" name="V1ShipFactoryTest.java">
+            <metrics coveredelements="16" coveredconditionals="0" complexity="2" loc="37" coveredmethods="2" methods="2" elements="16" classes="1" ncloc="27" statements="14" conditionals="0" coveredstatements="14"/>
+            <class name="V1ShipFactoryTest">
+               <metrics coveredelements="16" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="16" statements="14" conditionals="0" coveredstatements="14"/>
+            </class>
+            <line complexity="1" visibility="private" signature="checkShip(Ship&lt;Character&gt;,String,char,Coordinate) : void" num="11" count="4" type="method"/>
+            <line num="13" count="4" type="stmt"/>
+            <line num="14" count="4" type="stmt"/>
+            <line num="15" count="4" type="stmt"/>
+            <line num="16" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test_v1shipfactory() : void" num="21" count="1" type="method"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+            <line num="25" count="1" type="stmt"/>
+            <line num="26" count="1" type="stmt"/>
+            <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="31" count="1" type="stmt"/>
+            <line num="32" count="1" type="stmt"/>
+            <line num="34" count="1" type="stmt"/>
+            <line num="35" count="1" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/NoCollisionRuleCheckerTest.java" name="NoCollisionRuleCheckerTest.java">
+            <metrics coveredelements="13" coveredconditionals="0" complexity="1" loc="28" coveredmethods="1" methods="1" elements="13" classes="1" ncloc="20" statements="12" conditionals="0" coveredstatements="12"/>
+            <class name="NoCollisionRuleCheckerTest">
+               <metrics coveredelements="13" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="13" statements="12" conditionals="0" coveredstatements="12"/>
+            </class>
+            <line complexity="1" visibility="public" signature="test_NoCollisionRuleChecker() : void" num="8" count="1" type="method"/>
+            <line num="10" count="1" type="stmt"/>
+            <line num="11" count="1" type="stmt"/>
+            <line num="12" count="1" type="stmt"/>
+            <line num="14" count="1" type="stmt"/>
+            <line num="15" count="1" type="stmt"/>
+            <line num="16" count="1" type="stmt"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="22" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+         </file>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/RectangleShipTest.java" name="RectangleShipTest.java">
             <metrics coveredelements="64" coveredconditionals="0" complexity="6" loc="102" coveredmethods="6" methods="6" elements="64" classes="1" ncloc="84" statements="58" conditionals="0" coveredstatements="58"/>
             <class name="RectangleShipTest">
                <metrics coveredelements="64" coveredconditionals="0" complexity="6" coveredmethods="6" methods="6" elements="64" statements="58" conditionals="0" coveredstatements="58"/>
@@ -518,175 +687,39 @@
             <line num="97" count="1" type="stmt"/>
             <line num="98" count="1" type="stmt"/>
          </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/V1ShipFactoryTest.java" name="V1ShipFactoryTest.java">
-            <metrics coveredelements="16" coveredconditionals="0" complexity="2" loc="37" coveredmethods="2" methods="2" elements="16" classes="1" ncloc="27" statements="14" conditionals="0" coveredstatements="14"/>
-            <class name="V1ShipFactoryTest">
-               <metrics coveredelements="16" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="16" statements="14" conditionals="0" coveredstatements="14"/>
+         <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/BoardTextViewTest.java" name="BoardTextViewTest.java">
+            <metrics coveredelements="24" coveredconditionals="0" complexity="3" loc="46" coveredmethods="3" methods="3" elements="24" classes="1" ncloc="36" statements="21" conditionals="0" coveredstatements="21"/>
+            <class name="BoardTextViewTest">
+               <metrics coveredelements="24" coveredconditionals="0" complexity="3" coveredmethods="3" methods="3" elements="24" statements="21" conditionals="0" coveredstatements="21"/>
             </class>
-            <line complexity="1" visibility="private" signature="checkShip(Ship&lt;Character&gt;,String,char,Coordinate) : void" num="11" count="4" type="method"/>
-            <line num="13" count="4" type="stmt"/>
-            <line num="14" count="4" type="stmt"/>
-            <line num="15" count="4" type="stmt"/>
-            <line num="16" count="4" type="stmt"/>
-            <line complexity="1" visibility="public" signature="test_v1shipfactory() : void" num="21" count="1" type="method"/>
+            <line complexity="1" visibility="public" signature="test_display_empty_2by2() : void" num="10" count="1" type="method"/>
+            <line num="12" count="1" type="stmt"/>
+            <line num="13" count="1" type="stmt"/>
+            <line num="14" count="1" type="stmt"/>
+            <line num="15" count="1" type="stmt"/>
+            <line num="16" count="1" type="stmt"/>
+            <line num="17" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test_display_non_empty_4by3() : void" num="20" count="1" type="method"/>
+            <line num="22" count="1" type="stmt"/>
             <line num="23" count="1" type="stmt"/>
             <line num="24" count="1" type="stmt"/>
             <line num="25" count="1" type="stmt"/>
-            <line num="26" count="1" type="stmt"/>
-            <line num="28" count="1" type="stmt"/>
-            <line num="29" count="1" type="stmt"/>
-            <line num="31" count="1" type="stmt"/>
-            <line num="32" count="1" type="stmt"/>
-            <line num="34" count="1" type="stmt"/>
-            <line num="35" count="1" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/InBoundsRuleCheckerTest.java" name="InBoundsRuleCheckerTest.java">
-            <metrics coveredelements="13" coveredconditionals="0" complexity="1" loc="26" coveredmethods="1" methods="1" elements="13" classes="1" ncloc="20" statements="12" conditionals="0" coveredstatements="12"/>
-            <class name="InBoundsRuleCheckerTest">
-               <metrics coveredelements="13" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="13" statements="12" conditionals="0" coveredstatements="12"/>
-            </class>
-            <line complexity="1" visibility="public" signature="test_InBoundRuleChecker() : void" num="8" count="1" type="method"/>
-            <line num="10" count="1" type="stmt"/>
-            <line num="11" count="1" type="stmt"/>
-            <line num="12" count="1" type="stmt"/>
-            <line num="14" count="1" type="stmt"/>
-            <line num="15" count="1" type="stmt"/>
-            <line num="16" count="1" type="stmt"/>
-            <line num="17" count="1" type="stmt"/>
-            <line num="18" count="1" type="stmt"/>
-            <line num="19" count="1" type="stmt"/>
-            <line num="20" count="1" type="stmt"/>
-            <line num="21" count="1" type="stmt"/>
-            <line num="22" count="1" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/CoordinateTest.java" name="CoordinateTest.java">
-            <metrics coveredelements="57" coveredconditionals="0" complexity="5" loc="82" coveredmethods="5" methods="5" elements="57" classes="1" ncloc="75" statements="52" conditionals="0" coveredstatements="52"/>
-            <class name="CoordinateTest">
-               <metrics coveredelements="57" coveredconditionals="0" complexity="5" coveredmethods="5" methods="5" elements="57" statements="52" conditionals="0" coveredstatements="52"/>
-            </class>
-            <line complexity="1" visibility="public" signature="test_equals() : void" num="10" count="1" type="method"/>
-            <line num="12" count="1" type="stmt"/>
-            <line num="13" count="1" type="stmt"/>
-            <line num="14" count="1" type="stmt"/>
-            <line num="15" count="1" type="stmt"/>
-            <line num="16" count="1" type="stmt"/>
-            <line num="17" count="1" type="stmt"/>
-            <line num="18" count="1" type="stmt"/>
-            <line num="19" count="1" type="stmt"/>
-            <line num="20" count="1" type="stmt"/>
-            <line num="21" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="test_toString() : void" num="24" count="1" type="method"/>
-            <line num="26" count="1" type="stmt"/>
             <line num="27" count="1" type="stmt"/>
             <line num="28" count="1" type="stmt"/>
-            <line num="29" count="1" type="stmt"/>
             <line num="30" count="1" type="stmt"/>
             <line num="31" count="1" type="stmt"/>
             <line num="32" count="1" type="stmt"/>
             <line num="33" count="1" type="stmt"/>
             <line num="34" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="test_hashCode() : void" num="37" count="1" type="method"/>
+            <line complexity="1" visibility="public" signature="test_invalid_board_size() : void" num="37" count="1" type="method"/>
             <line num="39" count="1" type="stmt"/>
             <line num="40" count="1" type="stmt"/>
-            <line num="41" count="1" type="stmt"/>
             <line num="42" count="1" type="stmt"/>
             <line num="43" count="1" type="stmt"/>
-            <line num="44" count="1" type="stmt"/>
-            <line num="45" count="1" type="stmt"/>
-            <line complexity="1" visibility="package" signature="test_string_constructor_valid_cases() : void" num="48" count="1" type="method"/>
-            <line num="50" count="1" type="stmt"/>
-            <line num="51" count="1" type="stmt"/>
-            <line num="52" count="1" type="stmt"/>
-            <line num="53" count="1" type="stmt"/>
-            <line num="54" count="1" type="stmt"/>
-            <line num="55" count="1" type="stmt"/>
-            <line num="56" count="1" type="stmt"/>
-            <line num="57" count="1" type="stmt"/>
-            <line num="58" count="1" type="stmt"/>
-            <line num="59" count="1" type="stmt"/>
-            <line num="60" count="1" type="stmt"/>
-            <line num="61" count="1" type="stmt"/>
-            <line num="62" count="1" type="stmt"/>
-            <line num="63" count="1" type="stmt"/>
-            <line num="64" count="1" type="stmt"/>
-            <line num="65" count="1" type="stmt"/>
-            <line num="66" count="1" type="stmt"/>
-            <line num="67" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="test_string_constructor_error_cases() : void" num="71" count="1" type="method"/>
-            <line num="73" count="1" type="stmt"/>
-            <line num="74" count="1" type="stmt"/>
-            <line num="75" count="1" type="stmt"/>
-            <line num="76" count="1" type="stmt"/>
-            <line num="77" count="1" type="stmt"/>
-            <line num="78" count="1" type="stmt"/>
-            <line num="79" count="1" type="stmt"/>
-            <line num="80" count="1" type="stmt"/>
-         </file>
-         <file path="/home/dianyu/Documents/ECE651/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/PlacementTest.java" name="PlacementTest.java">
-            <metrics coveredelements="56" coveredconditionals="0" complexity="6" loc="85" coveredmethods="6" methods="6" elements="56" classes="1" ncloc="73" statements="50" conditionals="0" coveredstatements="50"/>
-            <class name="PlacementTest">
-               <metrics coveredelements="56" coveredconditionals="0" complexity="6" coveredmethods="6" methods="6" elements="56" statements="50" conditionals="0" coveredstatements="50"/>
-            </class>
-            <line complexity="1" visibility="public" signature="test_equals() : void" num="8" count="1" type="method"/>
-            <line num="10" count="1" type="stmt"/>
-            <line num="11" count="1" type="stmt"/>
-            <line num="12" count="1" type="stmt"/>
-            <line num="13" count="1" type="stmt"/>
-            <line num="14" count="1" type="stmt"/>
-            <line num="15" count="1" type="stmt"/>
-            <line num="16" count="1" type="stmt"/>
-            <line num="17" count="1" type="stmt"/>
-            <line num="18" count="1" type="stmt"/>
-            <line num="19" count="1" type="stmt"/>
-            <line num="20" count="1" type="stmt"/>
-            <line num="21" count="1" type="stmt"/>
-            <line num="22" count="1" type="stmt"/>
-            <line num="23" count="1" type="stmt"/>
-            <line complexity="1" visibility="package" signature="test_hashCode() : void" num="26" count="1" type="method"/>
-            <line num="28" count="1" type="stmt"/>
-            <line num="29" count="1" type="stmt"/>
-            <line num="30" count="1" type="stmt"/>
-            <line num="31" count="1" type="stmt"/>
-            <line num="32" count="1" type="stmt"/>
-            <line num="33" count="1" type="stmt"/>
-            <line num="34" count="1" type="stmt"/>
-            <line num="35" count="1" type="stmt"/>
-            <line num="36" count="1" type="stmt"/>
-            <line num="37" count="1" type="stmt"/>
-            <line complexity="1" visibility="package" signature="test_getter() : void" num="40" count="1" type="method"/>
-            <line num="42" count="1" type="stmt"/>
-            <line num="43" count="1" type="stmt"/>
-            <line num="44" count="1" type="stmt"/>
-            <line num="45" count="1" type="stmt"/>
-            <line num="46" count="1" type="stmt"/>
-            <line num="47" count="1" type="stmt"/>
-            <line num="48" count="1" type="stmt"/>
-            <line num="49" count="1" type="stmt"/>
-            <line num="51" count="1" type="stmt"/>
-            <line num="52" count="1" type="stmt"/>
-            <line num="54" count="1" type="stmt"/>
-            <line num="55" count="1" type="stmt"/>
-            <line complexity="1" visibility="package" signature="test_string_constructor_valid_cases() : void" num="58" count="1" type="method"/>
-            <line num="60" count="1" type="stmt"/>
-            <line num="61" count="1" type="stmt"/>
-            <line num="62" count="1" type="stmt"/>
-            <line num="63" count="1" type="stmt"/>
-            <line num="64" count="1" type="stmt"/>
-            <line num="65" count="1" type="stmt"/>
-            <line num="66" count="1" type="stmt"/>
-            <line num="67" count="1" type="stmt"/>
-            <line num="68" count="1" type="stmt"/>
-            <line complexity="1" visibility="package" signature="test_string_constructor_error_cases() : void" num="72" count="1" type="method"/>
-            <line num="74" count="1" type="stmt"/>
-            <line num="75" count="1" type="stmt"/>
-            <line num="76" count="1" type="stmt"/>
-            <line num="77" count="1" type="stmt"/>
-            <line complexity="1" visibility="package" signature="test_wrong_input() : void" num="79" count="1" type="method"/>
-            <line num="81" count="1" type="stmt"/>
          </file>
       </package>
    </project>
-   <testproject name="app" timestamp="1644040729660">
+   <testproject name="app" timestamp="1644044073087">
       <metrics coveredelements="0" complexity="0" loc="0" methods="0" classes="0" statements="0" packages="0" coveredconditionals="0" coveredmethods="0" elements="0" ncloc="0" files="0" conditionals="0" coveredstatements="0"/>
    </testproject>
 </coverage>
