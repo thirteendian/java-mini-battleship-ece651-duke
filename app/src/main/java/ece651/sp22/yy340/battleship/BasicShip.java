@@ -67,4 +67,9 @@ public abstract class BasicShip<T> implements Ship<T> {
     return myDisplayInfo.getInfo(where, myPieces.get(where));
   }
 
+  @Override
+  public Iterable<Coordinate> getCoordinates() {
+    return myPieces.keySet();
+  }
+
 }

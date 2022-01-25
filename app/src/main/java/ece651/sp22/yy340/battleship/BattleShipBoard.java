@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *                                  equal to zero.
  */
 
-public class BattleShipBoard <T> implements Board <T> {
+public class BattleShipBoard<T> implements Board<T> {
   private final int width;
   private final int height;
   private final ArrayList<Ship<T>> myShips;
-  
-  
+  private final PlacementRuleChecker<T> placementChecker;
+
   public int getWidth() {
     return width;
   }
@@ -25,13 +25,13 @@ public class BattleShipBoard <T> implements Board <T> {
     return height;
   }
 
-   public boolean tryAddShip(Ship<T> toAdd) {
-        myShips.add(toAdd);
-        return true;
-    }
-
+  public boolean tryAddShip(Ship<T> toAdd) {
+    myShips.add(toAdd);
+    return true;
+  }
 
   public BattleShipBoard(int w, int h) {
+
     if (w <= 0) {
       throw new IllegalArgumentException("BattleShipBoard's width must be positive but is " + w);
     }
@@ -41,15 +41,16 @@ public class BattleShipBoard <T> implements Board <T> {
     this.width = w;
     this.height = h;
     this.myShips = new ArrayList<>();
+    this.placementChecker = new InBoundsRuleChecker<T>(null);
   }
 
   public T whatIsAt(Coordinate where) {
-        for (Ship<T> s : myShips) {
-            if (s.occupiesCoordinates(where)) {
-                return s.getDisplayInfoAt(where);
-            }
-        }
-        return null;
+    for (Ship<T> s : myShips) {
+      if (s.occupiesCoordinates(where)) {
+        return s.getDisplayInfoAt(where);
+      }
     }
+    return null;
+  }
 
 }
