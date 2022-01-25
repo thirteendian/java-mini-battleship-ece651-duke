@@ -22,27 +22,27 @@ public class BattleShipBoardTest {
   }
 
   private <T> void checkWhatIsAtBoard(BattleShipBoard<T> b, T[][] expected) {
-    for (int i = 0; i < b.getWidth(); i++) {
-      for (int k = 0; k < b.getHeight(); k++) {
-        assertEquals(expected[k][i], b.whatIsAt(new Coordinate(k, i)));
+    for (int i = 0; i < b.getHeight(); i++) {
+      for (int j = 0; j < b.getWidth(); j++) {
+        assertEquals(b.whatIsAt(new Coordinate(i, j)), expected[i][j]);
       }
     }
   }
 
   @Test
   public void test_Ship_Array() {
-    BattleShipBoard<Character> b = new BattleShipBoard<>(30, 20);
-    Character[][] board = new Character[20][30];
+    BattleShipBoard<Character> b = new BattleShipBoard<>(10, 20);
+    Character[][] board = new Character[20][10];
     checkWhatIsAtBoard(b, board);
-    RectangleShip<Character> s1 = new RectangleShip<Character>(new Coordinate(4, 6), 's', '*');
-    RectangleShip<Character> s2 = new RectangleShip<Character>(new Coordinate(10, 20), 's', '*');
 
-    assertEquals(b.tryAddShip(s1), true);
-    assertEquals(b.tryAddShip(s2), true);
-    
-    board[4][6] = 's';
-    board[10][20] = 's';
+    b.tryAddShip(new RectangleShip<Character>(new Coordinate(3, 5), 's', '*'));
+    board[3][5] = 's';
     checkWhatIsAtBoard(b, board);
+
+    b.tryAddShip(new RectangleShip<Character>(new Coordinate(1, 1), 's', '*'));
+    board[1][1] = 's';
+    checkWhatIsAtBoard(b, board);
+    
   }
 
 }
