@@ -10,39 +10,29 @@ import java.io.PrintStream;
 import java.io.Reader;
 
 public class App {
-  final Board<Character> theBoard;
-  final BoardTextView view;
-  final BufferedReader inputReader;
-  final PrintStream out;
-  final AbstractShipFactory<Character> shipFactory;
 
-  public App(Board<Character> theBoard, Reader inputSource, PrintStream out) {
-    this.theBoard = theBoard;
-    this.view = new BoardTextView(theBoard);
-    this.inputReader = new BufferedReader(inputSource);
-    this.out = out;
-    this.shipFactory = new V1ShipFactory();
+  TextPlayer player1;
+  TextPlayer player2;
 
+  public App(TextPlayer player1, TextPlayer player2) {
+    this.player1 = player1;
+    this.player2 = player2;
   }
 
-  public Placement readPlacement(String prompt) throws IOException {
-    out.println(prompt);
-    String s = inputReader.readLine();
-    return new Placement(s);
-  }
-
-  public void doOnePlacement() throws IOException {
-    Placement pos = readPlacement("Where would you like to put your ship?");
-    Ship<Character> s = shipFactory.makeDestroyer(pos);
-    theBoard.tryAddShip(s);
-    out.print(view.displayMyOwnBoard());
+  public void doPlacementPhase() throws IOException {
+    player1.doPlacementPhase();
+    player2.doPlacementPhase();
   }
 
   public static void main(String[] args) throws IOException {
-    System.out.println("What to do next?\n");
-    Board<Character> myBoard = new BattleShipBoard<Character>(10, 20);
-    App app = new App(myBoard, new InputStreamReader(System.in), System.out);
-    app.doOnePlacement();
+    BufferedReader buffer_reader = new BufferedReader(new InputStreamReader(System.in));
+    V1ShipFactory v1shipfactory = new V1ShipFactory();
+    Board<Character> b1 = new BattleShipBoard<Character>(10, 20);
+    Board<Character> b2 = new BattleShipBoard<Character>(10, 20);
+    TextPlayer player1 = new TextPlayer("A", b1, buffer_reader, System.out, v1shipfactory);
+    TextPlayer player2 = new TextPlayer("B", b2, buffer_reader, System.out, v1shipfactory);
+    App app = new App(player1, player2);
+    app.doPlacementPhase();
   }
 
 }

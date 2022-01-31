@@ -30,8 +30,9 @@ public class NoCollisionRuleCheckerTest {
     b1.tryAddShip(s1);
     Ship<Character> s2 = v1shipfactory.makeBattleship(new Placement("A7V"));
     assertEquals(true, multi_checker.checkPlacement(s2, b1));
+
     Ship<Character> s3 = v1shipfactory.makeDestroyer(new Placement("A5H"));
-    assertEquals(true, multi_checker.checkPlacement(s3, b1));
+    assertEquals(false, multi_checker.checkPlacement(s3, b1));
 
   }
 

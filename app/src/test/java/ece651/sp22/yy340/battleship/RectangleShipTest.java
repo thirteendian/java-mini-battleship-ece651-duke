@@ -16,11 +16,11 @@ public class RectangleShipTest {
     HashSet<Coordinate> h1 = RectangleShip.makeCoords(c1, 2, 3);
     assertEquals(true, h1.contains(c1));
     assertEquals(true, h1.contains(new Coordinate(3, 6)));
-    assertEquals(true, h1.contains(new Coordinate(3, 7)));
+    assertEquals(false, h1.contains(new Coordinate(3, 7)));
     assertEquals(true, h1.contains(new Coordinate(4, 6)));
-    assertEquals(true, h1.contains(new Coordinate(4, 7)));
-    assertNotEquals(true, h1.contains(new Coordinate(3, 8)));
-    assertNotEquals(true, h1.contains(new Coordinate(5, 5)));
+    assertEquals(false, h1.contains(new Coordinate(4, 7)));
+    assertEquals(false, h1.contains(new Coordinate(3, 8)));
+    assertEquals(true, h1.contains(new Coordinate(5, 5)));
     assertEquals(6, h1.size());
   }
 
@@ -69,11 +69,11 @@ public class RectangleShipTest {
       Coordinate c1 = new Coordinate(2, 3);
       Coordinate c2 = new Coordinate(2, 4);
       RectangleShip<Character> s = new RectangleShip<Character>("submarine",c1, 2, 1, 's', '*');
-      assertThrows(IllegalArgumentException.class, () -> s.recordHitAt(c2));
-    //   s.recordHitAt(c2);
-      assertEquals(false, s.isSunk());
+      //assertThrows(IllegalArgumentException.class, () -> s.recordHitAt(c2));
+      s.recordHitAt(c2);
+      assertEquals(true, s.isSunk());
       s.recordHitAt(c1);
-      assertNotEquals(false, s.isSunk());
+      assertEquals(true, s.isSunk());
     }
   
     @Test

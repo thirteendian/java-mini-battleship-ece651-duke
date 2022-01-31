@@ -16,10 +16,10 @@ public class RectangleShip<T> extends BasicShip<T> {
    * (row=1,col=2) width = 1 height = 3
    */
   static HashSet<Coordinate> makeCoords(Coordinate upperLeft, int width, int height) {
-    HashSet<Coordinate> set_of_Coordinates = new HashSet<>();
-    for (int row = upperLeft.getColumn(); row < upperLeft.getColumn() + height; row++) {
-      for (int column = upperLeft.getRow(); column < upperLeft.getRow() + width; column++) {
-        Coordinate coordinate_c = new Coordinate(column, row);
+    HashSet<Coordinate> set_of_Coordinates = new HashSet<>(); 
+    for (int row = upperLeft.getRow(); row < upperLeft.getRow() + height; row++) {
+      for (int column = upperLeft.getColumn(); column < upperLeft.getColumn() + width; column++) {
+        Coordinate coordinate_c = new Coordinate(row, column);
         set_of_Coordinates.add(coordinate_c);
       }
     }
