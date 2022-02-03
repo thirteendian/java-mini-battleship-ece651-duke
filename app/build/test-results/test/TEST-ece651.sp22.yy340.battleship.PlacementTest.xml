@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece651.sp22.yy340.battleship.PlacementTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-02-05T11:03:17" hostname="dianyu-XPS-15-9550" time="0.009">
+<testsuite name="ece651.sp22.yy340.battleship.PlacementTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-02-05T11:42:49" hostname="dianyu-XPS-15-9550" time="0.011">
   <properties/>
-  <testcase name="test_string_constructor_valid_cases()" classname="ece651.sp22.yy340.battleship.PlacementTest" time="0.001"/>
-  <testcase name="test_hashCode()" classname="ece651.sp22.yy340.battleship.PlacementTest" time="0.003"/>
+  <testcase name="test_string_constructor_valid_cases()" classname="ece651.sp22.yy340.battleship.PlacementTest" time="0.0"/>
+  <testcase name="test_hashCode()" classname="ece651.sp22.yy340.battleship.PlacementTest" time="0.004"/>
   <testcase name="test_string_constructor_error_cases()" classname="ece651.sp22.yy340.battleship.PlacementTest" time="0.001"/>
   <testcase name="test_equals()" classname="ece651.sp22.yy340.battleship.PlacementTest" time="0.001"/>
   <testcase name="test_getter()" classname="ece651.sp22.yy340.battleship.PlacementTest" time="0.001"/>

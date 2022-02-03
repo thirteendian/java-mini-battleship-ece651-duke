@@ -35,9 +35,9 @@ public class BattleShipBoardTest {
     Character[][] board = new Character[20][10];
     checkWhatIsAtBoard(b, board);
 
-    b.tryAddShip(new RectangleShip<Character>(new Coordinate(3, 5), 's', '*'));
-    board[3][5] = 's';
-    checkWhatIsAtBoard(b, board);
+    assertEquals("That placement is invalid: the ship goes off the right of the board.", b.tryAddShip(new RectangleShip<Character>("Submarine", new Coordinate(3, 5), 10,10,'s','*')));
+    //board[3][5] = 's';
+    //checkWhatIsAtBoard(b, board);
 
     b.tryAddShip(new RectangleShip<Character>(new Coordinate(1, 1), 's', '*'));
     board[1][1] = 's';

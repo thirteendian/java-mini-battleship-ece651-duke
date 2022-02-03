@@ -1,6 +1,7 @@
 package ece651.sp22.yy340.battleship;
 
 import java.io.BufferedReader;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -36,6 +37,9 @@ public class TextPlayer {
   public Placement readPlacement(String prompt) throws IOException {
     out.println(prompt);
     String s = inputReader.readLine();
+    if(s == null){
+      throw new EOFException();
+    }
     return new Placement(s);
   }
 

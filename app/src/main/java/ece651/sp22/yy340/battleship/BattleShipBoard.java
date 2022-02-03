@@ -25,14 +25,13 @@ public class BattleShipBoard<T> implements Board<T> {
     return height;
   }
 
-  public boolean tryAddShip(Ship<T> toAdd) {
-    this.myShips.add(toAdd);
-    // Check if placementChecker is true
-    if (placementChecker.checkPlacement(toAdd, this)) {
-      myShips.add(toAdd);
-      return true;
+  public String tryAddShip(Ship<T> toAdd) {
+    String err =  placementChecker.checkPlacement(toAdd, this);
+    if(err ==null){
+    myShips.add(toAdd);
+    return null;
     }
-    return false;
+    return err;
   }
 
   public BattleShipBoard(int w, int h) {

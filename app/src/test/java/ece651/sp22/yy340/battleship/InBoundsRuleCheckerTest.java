@@ -13,14 +13,17 @@ public class InBoundsRuleCheckerTest {
 
     Placement v1_1 = new Placement(new Coordinate(2, 3), 'V');
     Ship<Character> dst1 = v1shipfactory.makeDestroyer(v1_1);
-    assertTrue(inboundsrulechecker.checkMyRule(dst1,b));
+    assertEquals(null, inboundsrulechecker.checkMyRule(dst1, b));
+
     Placement v1_2 = new Placement(new Coordinate(50, 100), 'V');
     Ship<Character> dst2 = v1shipfactory.makeDestroyer(v1_2);
-    assertFalse(inboundsrulechecker.checkMyRule(dst2,b));
+    assertEquals("That placement is invalid: the ship goes off the bottom of the board.",
+        inboundsrulechecker.checkMyRule(dst2, b));
+
     Placement v1_3 = new Placement(new Coordinate(-50, -100), 'V');
     Ship<Character> dst3 = v1shipfactory.makeDestroyer(v1_3);
-    assertFalse(inboundsrulechecker.checkMyRule(dst3,b));
-    
+    assertEquals("That placement is invalid: the ship goes off the top of the board.", inboundsrulechecker.checkMyRule(dst3, b));
+
   }
 
 }

@@ -8,29 +8,6 @@ Player A: you are going to place the following ships (which are all rectangular)
 --------------------------------------------------------------------------------
 Player A where would you like to place a Submarine?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
-D  | | | | | | | | |  D
-E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  | | | | | | | | |  I
-J  | | | | | | | | |  J
-K  | | | | | | | | |  K
-L  | | | | | | | | |  L
-M  | | | | | | | | |  M
-N  | | | | | | | | |  N
-O  | | | | | | | | |  O
-P  | | | | | | | | |  P
-Q  | | | | | | | | |  Q
-R  | | | | | | | | |  R
-S  | | | | | | | | |  S
-T  | | | | | | | | |  T
-  0|1|2|3|4|5|6|7|8|9
-Player A where would you like to place a Submarine?
-  0|1|2|3|4|5|6|7|8|9
 A  |s| | | | | | | |  A
 B  |s| | | | | | | |  B
 C  | | | | | | | | |  C
@@ -52,11 +29,11 @@ R  | | | | | | | | |  R
 S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
-Player A where would you like to place a Destroyer?
+Player A where would you like to place a Submarine?
   0|1|2|3|4|5|6|7|8|9
-A  |s|d| | | | | | |  A
-B  |s|d| | | | | | |  B
-C  | |d| | | | | | |  C
+A  |s|s| | | | | | |  A
+B  |s|s| | | | | | |  B
+C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
@@ -77,9 +54,9 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where would you like to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A  |s|d|d| | | | | |  A
-B  |s|d|d| | | | | |  B
-C  | |d|d| | | | | |  C
+A  |s|s|d| | | | | |  A
+B  |s|s|d| | | | | |  B
+C  | | |d| | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
@@ -100,9 +77,32 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where would you like to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A  |s|d|d|d| | | | |  A
-B  |s|d|d|d| | | | |  B
-C  | |d|d|d| | | | |  C
+A  |s|s|d|d| | | | |  A
+B  |s|s|d|d| | | | |  B
+C  | | |d|d| | | | |  C
+D  | | | | | | | | |  D
+E  | | | | | | | | |  E
+F  | | | | | | | | |  F
+G  | | | | | | | | |  G
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
+N  | | | | | | | | |  N
+O  | | | | | | | | |  O
+P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R
+S  | | | | | | | | |  S
+T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9
+Player A where would you like to place a Destroyer?
+  0|1|2|3|4|5|6|7|8|9
+A  |s|s|d|d|d| | | |  A
+B  |s|s|d|d|d| | | |  B
+C  | | |d|d|d| | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
@@ -123,10 +123,10 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where would you like to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A  |s|d|d|d|b| | | |  A
-B  |s|d|d|d|b| | | |  B
-C  | |d|d|d|b| | | |  C
-D  | | | | |b| | | |  D
+A  |s|s|d|d|d|b| | |  A
+B  |s|s|d|d|d|b| | |  B
+C  | | |d|d|d|b| | |  C
+D  | | | | | |b| | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
@@ -146,10 +146,10 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where would you like to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A  |s|d|d|d|b|b| | |  A
-B  |s|d|d|d|b|b| | |  B
-C  | |d|d|d|b|b| | |  C
-D  | | | | |b|b| | |  D
+A  |s|s|d|d|d|b|b| |  A
+B  |s|s|d|d|d|b|b| |  B
+C  | | |d|d|d|b|b| |  C
+D  | | | | | |b|b| |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
@@ -169,10 +169,10 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where would you like to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A  |s|d|d|d|b|b|b| |  A
-B  |s|d|d|d|b|b|b| |  B
-C  | |d|d|d|b|b|b| |  C
-D  | | | | |b|b|b| |  D
+A  |s|s|d|d|d|b|b|b|  A
+B  |s|s|d|d|d|b|b|b|  B
+C  | | |d|d|d|b|b|b|  C
+D  | | | | | |b|b|b|  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
@@ -192,12 +192,12 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where would you like to place a Carrier?
   0|1|2|3|4|5|6|7|8|9
-A  |s|d|d|d|b|b|b|c|  A
-B  |s|d|d|d|b|b|b|c|  B
-C  | |d|d|d|b|b|b|c|  C
-D  | | | | |b|b|b|c|  D
-E  | | | | | | | |c|  E
-F  | | | | | | | |c|  F
+A  |s|s|d|d|d|b|b|b|c A
+B  |s|s|d|d|d|b|b|b|c B
+C  | | |d|d|d|b|b|b|c C
+D  | | | | | |b|b|b|c D
+E  | | | | | | | | |c E
+F  | | | | | | | | |c F
 G  | | | | | | | | |  G
 H  | | | | | | | | |  H
 I  | | | | | | | | |  I
@@ -215,12 +215,12 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where would you like to place a Carrier?
   0|1|2|3|4|5|6|7|8|9
-A  |s|d|d|d|b|b|b|c|c A
-B  |s|d|d|d|b|b|b|c|c B
-C  | |d|d|d|b|b|b|c|c C
-D  | | | | |b|b|b|c|c D
-E  | | | | | | | |c|c E
-F  | | | | | | | |c|c F
+A  |s|s|d|d|d|b|b|b|c A
+B  |s|s|d|d|d|b|b|b|c B
+C  | | |d|d|d|b|b|b|c C
+D  | | | | | |b|b|b|c D
+E  |c|c|c|c|c| | | |c E
+F  | | | | | | | | |c F
 G  | | | | | | | | |  G
 H  | | | | | | | | |  H
 I  | | | | | | | | |  I
@@ -251,11 +251,11 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
+F  |s| | | | | | | |  F
+G  |s| | | | | | | |  G
 H  | | | | | | | | |  H
-I  |s| | | | | | | |  I
-J  |s| | | | | | | |  J
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
 K  | | | | | | | | |  K
 L  | | | | | | | | |  L
 M  | | | | | | | | |  M
@@ -274,11 +274,11 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
+F  |s|s| | | | | | |  F
+G  |s|s| | | | | | |  G
 H  | | | | | | | | |  H
-I  |s|s| | | | | | |  I
-J  |s|s| | | | | | |  J
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
 K  | | | | | | | | |  K
 L  | | | | | | | | |  L
 M  | | | | | | | | |  M
@@ -297,12 +297,12 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  |s|s|d| | | | | |  I
-J  |s|s|d| | | | | |  J
-K  | | |d| | | | | |  K
+F  |s|s|d| | | | | |  F
+G  |s|s|d| | | | | |  G
+H  | | |d| | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
 L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
@@ -320,12 +320,12 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  |s|s|d|d| | | | |  I
-J  |s|s|d|d| | | | |  J
-K  | | |d|d| | | | |  K
+F  |s|s|d|d| | | | |  F
+G  |s|s|d|d| | | | |  G
+H  | | |d|d| | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
 L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
@@ -343,12 +343,12 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  |s|s|d|d|d| | | |  I
-J  |s|s|d|d|d| | | |  J
-K  | | |d|d|d| | | |  K
+F  |s|s|d|d|d| | | |  F
+G  |s|s|d|d|d| | | |  G
+H  | | |d|d|d| | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
 L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
@@ -366,13 +366,13 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  |s|s|d|d|d|b| | |  I
-J  |s|s|d|d|d|b| | |  J
-K  | | |d|d|d|b| | |  K
-L  | | | | | |b| | |  L
+F  |s|s|d|d|d|b| | |  F
+G  |s|s|d|d|d|b| | |  G
+H  | | |d|d|d|b| | |  H
+I  | | | | | |b| | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
 O  | | | | | | | | |  O
@@ -389,13 +389,13 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  |s|s|d|d|d|b|b| |  I
-J  |s|s|d|d|d|b|b| |  J
-K  | | |d|d|d|b|b| |  K
-L  | | | | | |b|b| |  L
+F  |s|s|d|d|d|b|b| |  F
+G  |s|s|d|d|d|b|b| |  G
+H  | | |d|d|d|b|b| |  H
+I  | | | | | |b|b| |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
 O  | | | | | | | | |  O
@@ -412,13 +412,13 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  |s|s|d|d|d|b|b|b|  I
-J  |s|s|d|d|d|b|b|b|  J
-K  | | |d|d|d|b|b|b|  K
-L  | | | | | |b|b|b|  L
+F  |s|s|d|d|d|b|b|b|  F
+G  |s|s|d|d|d|b|b|b|  G
+H  | | |d|d|d|b|b|b|  H
+I  | | | | | |b|b|b|  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
 O  | | | | | | | | |  O
@@ -435,15 +435,15 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  |s|s|d|d|d|b|b|b|c I
-J  |s|s|d|d|d|b|b|b|c J
-K  | | |d|d|d|b|b|b|c K
-L  | | | | | |b|b|b|c L
-M  | | | | | | | | |c M
-N  | | | | | | | | |c N
+F  |s|s|d|d|d|b|b|b|c F
+G  |s|s|d|d|d|b|b|b|c G
+H  | | |d|d|d|b|b|b|c H
+I  | | | | | |b|b|b|c I
+J  | | | | | | | | |c J
+K  | | | | | | | | |c K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
+N  | | | | | | | | |  N
 O  | | | | | | | | |  O
 P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q
@@ -458,15 +458,15 @@ B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  |s|s|d|d|d|b|b|b|c I
-J  |s|s|d|d|d|b|b|b|c J
-K  | | |d|d|d|b|b|b|c K
-L  | | | | | |b|b|b|c L
-M  |c|c|c|c|c|c| | |c M
-N  | | | | | | | | |c N
+F  |s|s|d|d|d|b|b|b|c F
+G  |s|s|d|d|d|b|b|b|c G
+H  | | |d|d|d|b|b|b|c H
+I  | | | | | |b|b|b|c I
+J  | | | | | | | | |c J
+K  |c|c|c|c|c|c| | |c K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
+N  | | | | | | | | |  N
 O  | | | | | | | | |  O
 P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q

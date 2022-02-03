@@ -15,10 +15,11 @@ public class NoCollisionRuleCheckerTest {
     b.tryAddShip(s1);
 
     Ship<Character> s2 = v1shipfactory.makeDestroyer(new Placement("C3V"));
-    assertTrue(nocollisionrulechecker.checkPlacement(s2, b));
+    assertEquals(null//"That placement is invalide: Ship Overlaps !"
+                 ,nocollisionrulechecker.checkPlacement(s2, b));
 
     Ship<Character> s3 = v1shipfactory.makeDestroyer(new Placement("B2H"));
-    assertFalse(nocollisionrulechecker.checkPlacement(s3, b));
+    assertEquals("That placement is invalide: Ship Overlaps !",nocollisionrulechecker.checkPlacement(s3, b));
   }
 
   @Test
@@ -29,10 +30,10 @@ public class NoCollisionRuleCheckerTest {
     Ship<Character> s1 = v1shipfactory.makeDestroyer(new Placement("A4H"));
     b1.tryAddShip(s1);
     Ship<Character> s2 = v1shipfactory.makeBattleship(new Placement("A7V"));
-    assertEquals(true, multi_checker.checkPlacement(s2, b1));
+    assertEquals(null, multi_checker.checkPlacement(s2, b1));
 
     Ship<Character> s3 = v1shipfactory.makeDestroyer(new Placement("A5H"));
-    assertEquals(false, multi_checker.checkPlacement(s3, b1));
+     assertEquals("That placement is invalide: Ship Overlaps !", multi_checker.checkPlacement(s3, b1));
 
   }
 
