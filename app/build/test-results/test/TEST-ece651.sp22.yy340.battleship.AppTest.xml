@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece651.sp22.yy340.battleship.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-05T11:42:49" hostname="dianyu-XPS-15-9550" time="0.073">
+<testsuite name="ece651.sp22.yy340.battleship.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-05T12:02:28" hostname="dianyu-XPS-15-9550" time="0.078">
   <properties/>
-  <testcase name="test_main()" classname="ece651.sp22.yy340.battleship.AppTest" time="0.073"/>
+  <testcase name="test_main()" classname="ece651.sp22.yy340.battleship.AppTest" time="0.078"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

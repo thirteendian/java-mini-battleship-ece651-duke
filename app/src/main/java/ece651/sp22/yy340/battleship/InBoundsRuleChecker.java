@@ -18,7 +18,7 @@ public class InBoundsRuleChecker<T> extends PlacementRuleChecker<T> {
       if(c.getRow()< 0){
         return "That placement is invalid: the ship goes off the top of the board.";
       }
-      if(c.getColumn() >w-1){
+      if(c.getColumn() > (w-1)){
         return "That placement is invalid: the ship goes off the right of the board.";
       }
       if(c.getColumn() < 0){

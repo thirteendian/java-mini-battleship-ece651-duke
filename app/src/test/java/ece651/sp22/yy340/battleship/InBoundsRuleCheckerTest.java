@@ -20,9 +20,14 @@ public class InBoundsRuleCheckerTest {
     assertEquals("That placement is invalid: the ship goes off the bottom of the board.",
         inboundsrulechecker.checkMyRule(dst2, b));
 
-    Placement v1_3 = new Placement(new Coordinate(-50, -100), 'V');
+    Placement v1_3 = new Placement(new Coordinate(-3, 4), 'V');
     Ship<Character> dst3 = v1shipfactory.makeDestroyer(v1_3);
     assertEquals("That placement is invalid: the ship goes off the top of the board.", inboundsrulechecker.checkMyRule(dst3, b));
+
+    Placement v1_4 = new Placement(new Coordinate(3, -2), 'H');
+    Ship<Character> dst4 = v1shipfactory.makeDestroyer(v1_4);
+    assertEquals("That placement is invalid: the ship goes off the left of the board.", inboundsrulechecker.checkMyRule(dst4, b));
+    
 
   }
 
