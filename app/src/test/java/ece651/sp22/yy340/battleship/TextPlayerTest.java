@@ -55,8 +55,9 @@ public class TextPlayerTest {
       "C  |d|  C\n" +
       "D  |d|  D\n" +
       "  0|1|2\n";
-    String expected_p = "Player A where would you like to put your ship?\n" + expected;
-    player.doOnePlacement();
+    String expected_p = "Player "+ player.name+" where would you like to place a Destroyer?\n" + expected;
+    V1ShipFactory shipfactory = new V1ShipFactory();
+    player.doOnePlacement("Destroyer", (p)->shipfactory.makeDestroyer(p));
     assertEquals(expected_p, bytes.toString());
   }
 
