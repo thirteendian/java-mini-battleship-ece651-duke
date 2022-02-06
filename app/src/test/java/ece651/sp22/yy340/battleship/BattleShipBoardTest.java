@@ -84,6 +84,7 @@ public class BattleShipBoardTest {
       "C  |d| |  C\n" +
       "  0|1|2|3\n";
      assertEquals(enermyView1, view.displayEnemyBoard());
+     //Now all pieces is true in myPieces, isSunk is true
      assertTrue(s.isSunk());
   }
 }
