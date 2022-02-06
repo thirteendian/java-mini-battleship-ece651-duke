@@ -8,7 +8,7 @@ public interface Board<T> {
 
   public String tryAddShip(Ship<T> toAdd);
 
-  //public T whatIsAt(Coordinate where, boolean isSelf);
+  // public T whatIsAt(Coordinate where, boolean isSelf);
 
   public T whatIsAtForSelf(Coordinate where);
 
@@ -16,4 +16,5 @@ public interface Board<T> {
 
   public T whatIsAtForEnemy(Coordinate where);
 
+  public boolean CheckingLost();
 }

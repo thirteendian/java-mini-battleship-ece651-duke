@@ -89,4 +89,17 @@ public class BattleShipBoard<T> implements Board<T> {
     return null;
   }
 
+  /*
+   * if there exist one is not sink then is not lost
+   */
+  public boolean CheckingLost() {
+    for (Ship<T> myShip : this.myShips) {
+      if (myShip.isSunk() == false) {
+        return false;
+      }
+    }
+    return true;
+
+  }
+
 }

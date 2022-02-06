@@ -74,7 +74,8 @@ public class BattleShipBoardTest {
       "C  | | |  C\n" +
       "  0|1|2|3\n";
     assertEquals(enermyView, view.displayEnemyBoard());
-
+    // Check lost
+    assertFalse(b.CheckingLost());
     b.fireAt(new Coordinate(1, 1));
     b.fireAt(new Coordinate(2, 1));
         String enermyView1 =
@@ -86,5 +87,8 @@ public class BattleShipBoardTest {
      assertEquals(enermyView1, view.displayEnemyBoard());
      //Now all pieces is true in myPieces, isSunk is true
      assertTrue(s.isSunk());
+
+     //also lost
+     assertTrue(b.CheckingLost());
   }
 }

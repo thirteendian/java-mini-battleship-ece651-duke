@@ -41,7 +41,10 @@ public abstract class BasicShip<T> implements Ship<T> {
     }
 
   }
-
+  /*
+   *false = not sunk
+   *true = sunk
+*/
   @Override
   public boolean isSunk() {
     // TODO Auto-generated method stub
