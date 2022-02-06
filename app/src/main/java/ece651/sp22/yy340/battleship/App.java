@@ -24,6 +24,24 @@ public class App {
     player2.doPlacementPhase();
   }
 
+  public void doAttackingPhase() throws IOException {
+    while (true) {
+      //Player 1
+      player1.playOneTurn(player2.theBoard, player2.view);
+      if (player2.theBoard.CheckingLost()) {
+        player1.textPlayer_print(player2.name);
+        return;
+      }
+      //Player 2
+      player2.playOneTurn(player1.theBoard, player1.view);
+      if (player1.theBoard.CheckingLost()) {
+        player2.textPlayer_print(player1.name);
+        return;
+      }
+
+    }
+  }
+
   public static void main(String[] args) throws IOException {
     BufferedReader buffer_reader = new BufferedReader(new InputStreamReader(System.in));
     V1ShipFactory v1shipfactory = new V1ShipFactory();
@@ -33,6 +51,8 @@ public class App {
     TextPlayer player2 = new TextPlayer("B", b2, buffer_reader, System.out, v1shipfactory);
     App app = new App(player1, player2);
     app.doPlacementPhase();
+    app.doAttackingPhase();
+    return;
   }
 
 }

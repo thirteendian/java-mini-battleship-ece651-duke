@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644112180896" clover="4.4.1">
-   <project name="app" timestamp="1644112180818">
-      <metrics coveredelements="756" complexity="153" loc="1565" methods="103" classes="28" statements="571" packages="1" coveredconditionals="82" coveredmethods="103" elements="756" ncloc="1109" files="28" conditionals="82" coveredstatements="571"/>
+<coverage generated="1644116998833" clover="4.4.1">
+   <project name="app" timestamp="1644116998751">
+      <metrics coveredelements="813" complexity="169" loc="1632" methods="106" classes="28" statements="614" packages="1" coveredconditionals="97" coveredmethods="106" elements="820" ncloc="1169" files="28" conditionals="100" coveredstatements="610"/>
       <package name="ece651.sp22.yy340.battleship">
-         <metrics coveredelements="756" complexity="153" loc="1565" methods="103" classes="28" statements="571" coveredconditionals="82" coveredmethods="103" elements="756" ncloc="1109" files="28" conditionals="82" coveredstatements="571"/>
+         <metrics coveredelements="813" complexity="169" loc="1632" methods="106" classes="28" statements="614" coveredconditionals="97" coveredmethods="106" elements="820" ncloc="1169" files="28" conditionals="100" coveredstatements="610"/>
          <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/NoCollisionRuleChecker.java" name="NoCollisionRuleChecker.java">
             <metrics coveredelements="9" coveredconditionals="2" complexity="3" loc="17" coveredmethods="2" methods="2" elements="9" classes="1" ncloc="15" statements="5" conditionals="2" coveredstatements="5"/>
             <class name="NoCollisionRuleChecker">
@@ -25,9 +25,9 @@
             </class>
          </file>
          <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/App.java" name="App.java">
-            <metrics coveredelements="15" coveredconditionals="0" complexity="3" loc="38" coveredmethods="3" methods="3" elements="15" classes="1" ncloc="28" statements="12" conditionals="0" coveredstatements="12"/>
+            <metrics coveredelements="28" coveredconditionals="3" complexity="6" loc="58" coveredmethods="4" methods="4" elements="31" classes="1" ncloc="44" statements="23" conditionals="4" coveredstatements="21"/>
             <class name="App">
-               <metrics coveredelements="15" coveredconditionals="0" complexity="3" coveredmethods="3" methods="3" elements="15" statements="12" conditionals="0" coveredstatements="12"/>
+               <metrics coveredelements="28" coveredconditionals="3" complexity="6" coveredmethods="4" methods="4" elements="31" statements="23" conditionals="4" coveredstatements="21"/>
             </class>
             <line complexity="1" visibility="public" signature="App(TextPlayer,TextPlayer)" num="17" count="1" type="method"/>
             <line num="18" count="1" type="stmt"/>
@@ -35,53 +35,67 @@
             <line complexity="1" visibility="public" signature="doPlacementPhase() : void" num="22" count="1" type="method"/>
             <line num="23" count="1" type="stmt"/>
             <line num="24" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="main(String[]) : void" num="27" count="1" type="method"/>
+            <line complexity="3" visibility="public" signature="doAttackingPhase() : void" num="27" count="1" type="method"/>
             <line num="28" count="1" type="stmt"/>
-            <line num="29" count="1" type="stmt"/>
-            <line num="30" count="1" type="stmt"/>
-            <line num="31" count="1" type="stmt"/>
+            <line num="30" count="40" type="stmt"/>
+            <line num="31" count="40" type="stmt"/>
+            <line falsecount="39" truecount="1" num="31" type="cond"/>
             <line num="32" count="1" type="stmt"/>
             <line num="33" count="1" type="stmt"/>
-            <line num="34" count="1" type="stmt"/>
-            <line num="35" count="1" type="stmt"/>
+            <line num="36" count="39" type="stmt"/>
+            <line num="37" count="39" type="stmt"/>
+            <line falsecount="39" truecount="0" num="37" type="cond"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="39" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="45" count="1" type="method"/>
+            <line num="46" count="1" type="stmt"/>
+            <line num="47" count="1" type="stmt"/>
+            <line num="48" count="1" type="stmt"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="50" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line num="52" count="1" type="stmt"/>
+            <line num="53" count="1" type="stmt"/>
+            <line num="54" count="1" type="stmt"/>
+            <line num="55" count="1" type="stmt"/>
          </file>
          <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/Coordinate.java" name="Coordinate.java">
             <metrics coveredelements="37" coveredconditionals="10" complexity="14" loc="63" coveredmethods="7" methods="7" elements="37" classes="1" ncloc="47" statements="20" conditionals="10" coveredstatements="20"/>
             <class name="Coordinate">
                <metrics coveredelements="37" coveredconditionals="10" complexity="14" coveredmethods="7" methods="7" elements="37" statements="20" conditionals="10" coveredstatements="20"/>
             </class>
-            <line complexity="1" visibility="public" signature="Coordinate(int,int)" num="7" count="5107" type="method"/>
-            <line num="8" count="5107" type="stmt"/>
-            <line num="9" count="5107" type="stmt"/>
-            <line complexity="7" visibility="public" signature="Coordinate(String)" num="13" count="59" type="method"/>
-            <line num="15" count="59" type="stmt"/>
-            <line falsecount="57" truecount="2" num="15" type="cond"/>
-            <line num="16" count="2" type="stmt"/>
-            <line num="20" count="57" type="stmt"/>
-            <line falsecount="53" truecount="4" num="20" type="cond"/>
+            <line complexity="1" visibility="public" signature="Coordinate(int,int)" num="7" count="37282" type="method"/>
+            <line num="8" count="37282" type="stmt"/>
+            <line num="9" count="37282" type="stmt"/>
+            <line complexity="7" visibility="public" signature="Coordinate(String)" num="13" count="143" type="method"/>
+            <line num="15" count="143" type="stmt"/>
+            <line falsecount="140" truecount="3" num="15" type="cond"/>
+            <line num="16" count="3" type="stmt"/>
+            <line num="20" count="140" type="stmt"/>
+            <line falsecount="136" truecount="4" num="20" type="cond"/>
             <line num="21" count="4" type="stmt"/>
-            <line num="25" count="53" type="stmt"/>
-            <line falsecount="51" truecount="2" num="25" type="cond"/>
-            <line num="26" count="2" type="stmt"/>
-            <line num="27" count="51" type="stmt"/>
-            <line falsecount="3" truecount="48" num="27" type="cond"/>
-            <line num="28" count="48" type="stmt"/>
+            <line num="25" count="136" type="stmt"/>
+            <line falsecount="133" truecount="3" num="25" type="cond"/>
+            <line num="26" count="3" type="stmt"/>
+            <line num="27" count="133" type="stmt"/>
+            <line falsecount="3" truecount="130" num="27" type="cond"/>
+            <line num="28" count="130" type="stmt"/>
             <line num="30" count="3" type="stmt"/>
-            <line num="32" count="50" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getRow() : int" num="36" count="439" type="method"/>
-            <line num="37" count="439" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getColumn() : int" num="40" count="745" type="method"/>
-            <line num="41" count="745" type="stmt"/>
-            <line complexity="2" visibility="public" signature="equals(Object) : boolean" num="44" count="2165" type="method"/>
-            <line num="46" count="2165" type="stmt"/>
-            <line falsecount="1" truecount="2164" num="46" type="cond"/>
-            <line num="47" count="2164" type="stmt"/>
-            <line num="48" count="2164" type="stmt"/>
+            <line num="32" count="133" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getRow() : int" num="36" count="601" type="method"/>
+            <line num="37" count="601" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getColumn() : int" num="40" count="911" type="method"/>
+            <line num="41" count="911" type="stmt"/>
+            <line complexity="2" visibility="public" signature="equals(Object) : boolean" num="44" count="30924" type="method"/>
+            <line num="46" count="30924" type="stmt"/>
+            <line falsecount="1" truecount="30923" num="46" type="cond"/>
+            <line num="47" count="30923" type="stmt"/>
+            <line num="48" count="30923" type="stmt"/>
             <line num="50" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="toString() : String" num="53" count="23209" type="method"/>
-            <line num="55" count="23209" type="stmt"/>
-            <line complexity="1" visibility="public" signature="hashCode() : int" num="58" count="23195" type="method"/>
-            <line num="60" count="23195" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="53" count="330384" type="method"/>
+            <line num="55" count="330384" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="58" count="330370" type="method"/>
+            <line num="60" count="330370" type="stmt"/>
          </file>
          <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/V1ShipFactory.java" name="V1ShipFactory.java">
             <metrics coveredelements="16" coveredconditionals="2" complexity="6" loc="42" coveredmethods="5" methods="5" elements="16" classes="1" ncloc="27" statements="9" conditionals="2" coveredstatements="9"/>
@@ -114,66 +128,66 @@
             <line num="25" count="12" type="stmt"/>
             <line falsecount="10" truecount="2" num="25" type="cond"/>
             <line num="26" count="2" type="stmt"/>
-            <line complexity="2" visibility="package" signature="makeHeader() : String" num="36" count="62" type="method"/>
-            <line num="37" count="62" type="stmt"/>
-            <line num="38" count="62" type="stmt"/>
-            <line num="39" count="62" type="stmt"/>
-            <line falsecount="62" truecount="504" num="39" type="cond"/>
-            <line num="40" count="504" type="stmt"/>
-            <line num="41" count="504" type="stmt"/>
-            <line num="42" count="504" type="stmt"/>
-            <line num="44" count="62" type="stmt"/>
-            <line num="45" count="62" type="stmt"/>
-            <line complexity="4" visibility="package" signature="makeBoard(Function&lt;Coordinate, Character&gt;) : String" num="54" count="30" type="method"/>
-            <line num="55" count="30" type="stmt"/>
-            <line num="56" count="30" type="stmt"/>
-            <line num="57" count="30" type="stmt"/>
-            <line falsecount="30" truecount="464" num="57" type="cond"/>
-            <line num="58" count="464" type="stmt"/>
-            <line num="59" count="464" type="stmt"/>
-            <line num="65" count="464" type="stmt"/>
-            <line falsecount="464" truecount="4024" num="65" type="cond"/>
-            <line num="67" count="4024" type="stmt"/>
-            <line num="68" count="4024" type="stmt"/>
-            <line falsecount="345" truecount="3679" num="68" type="cond"/>
-            <line num="69" count="3679" type="stmt"/>
-            <line num="71" count="345" type="stmt"/>
-            <line num="74" count="464" type="stmt"/>
-            <line num="75" count="464" type="stmt"/>
-            <line num="76" count="464" type="stmt"/>
-            <line num="78" count="30" type="stmt"/>
-            <line complexity="1" visibility="protected" signature="displayAnyBoard(Function&lt;Coordinate, Character&gt;) : String" num="81" count="30" type="method"/>
-            <line num="82" count="30" type="stmt"/>
-            <line num="83" count="30" type="stmt"/>
-            <line num="84" count="30" type="stmt"/>
-            <line num="85" count="30" type="stmt"/>
-            <line num="86" count="30" type="stmt"/>
-            <line complexity="1" visibility="public" signature="displayMyOwnBoard() : String" num="89" count="27" type="method"/>
-            <line num="90" count="27" type="stmt"/>
-            <line complexity="1" visibility="public" signature="displayEnemyBoard() : String" num="93" count="3" type="method"/>
-            <line num="94" count="3" type="stmt"/>
-            <line complexity="2" visibility="public" signature="displayMyBoardWithEnemyNextToIt(BoardTextView,String,String) : String" num="97" count="1" type="method"/>
-            <line num="99" count="1" type="stmt"/>
-            <line num="100" count="1" type="stmt"/>
-            <line num="101" count="1" type="stmt"/>
-            <line num="102" count="1" type="stmt"/>
-            <line num="103" count="1" type="stmt"/>
-            <line num="104" count="1" type="stmt"/>
-            <line num="106" count="1" type="stmt"/>
-            <line num="108" count="1" type="stmt"/>
-            <line num="110" count="1" type="stmt"/>
-            <line num="111" count="1" type="stmt"/>
-            <line num="117" count="1" type="stmt"/>
-            <line num="118" count="1" type="stmt"/>
-            <line falsecount="1" truecount="3" num="118" type="cond"/>
-            <line num="119" count="3" type="stmt"/>
-            <line num="121" count="1" type="stmt"/>
-            <line num="122" count="1" type="stmt"/>
+            <line complexity="2" visibility="package" signature="makeHeader() : String" num="36" count="378" type="method"/>
+            <line num="37" count="378" type="stmt"/>
+            <line num="38" count="378" type="stmt"/>
+            <line num="39" count="378" type="stmt"/>
+            <line falsecount="378" truecount="3664" num="39" type="cond"/>
+            <line num="40" count="3664" type="stmt"/>
+            <line num="41" count="3664" type="stmt"/>
+            <line num="42" count="3664" type="stmt"/>
+            <line num="44" count="378" type="stmt"/>
+            <line num="45" count="378" type="stmt"/>
+            <line complexity="4" visibility="package" signature="makeBoard(Function&lt;Coordinate, Character&gt;) : String" num="54" count="188" type="method"/>
+            <line num="55" count="188" type="stmt"/>
+            <line num="56" count="188" type="stmt"/>
+            <line num="57" count="188" type="stmt"/>
+            <line falsecount="188" truecount="3624" num="57" type="cond"/>
+            <line num="58" count="3624" type="stmt"/>
+            <line num="59" count="3624" type="stmt"/>
+            <line num="65" count="3624" type="stmt"/>
+            <line falsecount="3624" truecount="32464" num="65" type="cond"/>
+            <line num="67" count="32464" type="stmt"/>
+            <line num="68" count="32464" type="stmt"/>
+            <line falsecount="4080" truecount="28384" num="68" type="cond"/>
+            <line num="69" count="28384" type="stmt"/>
+            <line num="71" count="4080" type="stmt"/>
+            <line num="74" count="3624" type="stmt"/>
+            <line num="75" count="3624" type="stmt"/>
+            <line num="76" count="3624" type="stmt"/>
+            <line num="78" count="188" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="displayAnyBoard(Function&lt;Coordinate, Character&gt;) : String" num="81" count="188" type="method"/>
+            <line num="82" count="188" type="stmt"/>
+            <line num="83" count="188" type="stmt"/>
+            <line num="84" count="188" type="stmt"/>
+            <line num="85" count="188" type="stmt"/>
+            <line num="86" count="188" type="stmt"/>
+            <line complexity="1" visibility="public" signature="displayMyOwnBoard() : String" num="89" count="106" type="method"/>
+            <line num="90" count="106" type="stmt"/>
+            <line complexity="1" visibility="public" signature="displayEnemyBoard() : String" num="93" count="82" type="method"/>
+            <line num="94" count="82" type="stmt"/>
+            <line complexity="2" visibility="public" signature="displayMyBoardWithEnemyNextToIt(BoardTextView,String,String) : String" num="97" count="80" type="method"/>
+            <line num="99" count="80" type="stmt"/>
+            <line num="100" count="80" type="stmt"/>
+            <line num="101" count="80" type="stmt"/>
+            <line num="102" count="80" type="stmt"/>
+            <line num="103" count="80" type="stmt"/>
+            <line num="104" count="80" type="stmt"/>
+            <line num="106" count="80" type="stmt"/>
+            <line num="108" count="80" type="stmt"/>
+            <line num="110" count="80" type="stmt"/>
+            <line num="111" count="80" type="stmt"/>
+            <line num="117" count="80" type="stmt"/>
+            <line num="118" count="80" type="stmt"/>
+            <line falsecount="80" truecount="1583" num="118" type="cond"/>
+            <line num="119" count="1583" type="stmt"/>
+            <line num="121" count="80" type="stmt"/>
+            <line num="122" count="80" type="stmt"/>
          </file>
          <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/TextPlayer.java" name="TextPlayer.java">
-            <metrics coveredelements="44" coveredconditionals="2" complexity="7" loc="83" coveredmethods="6" methods="6" elements="44" classes="1" ncloc="73" statements="36" conditionals="2" coveredstatements="36"/>
+            <metrics coveredelements="88" coveredconditionals="14" complexity="20" loc="130" coveredmethods="8" methods="8" elements="92" classes="1" ncloc="117" statements="68" conditionals="16" coveredstatements="66"/>
             <class name="TextPlayer">
-               <metrics coveredelements="44" coveredconditionals="2" complexity="7" coveredmethods="6" methods="6" elements="44" statements="36" conditionals="2" coveredstatements="36"/>
+               <metrics coveredelements="88" coveredconditionals="14" complexity="20" coveredmethods="8" methods="8" elements="92" statements="68" conditionals="16" coveredstatements="66"/>
             </class>
             <line complexity="1" visibility="public" signature="TextPlayer(String,Board&lt;Character&gt;,BufferedReader,PrintStream,AbstractShipFactory&lt;Character&gt;)" num="22" count="5" type="method"/>
             <line num="24" count="5" type="stmt"/>
@@ -208,26 +222,67 @@
             <line num="64" count="2" type="stmt"/>
             <line num="65" count="2" type="stmt"/>
             <line num="66" count="20" type="stmt"/>
-            <line complexity="1" visibility="protected" signature="setupShipCreationMap() : void" num="69" count="5" type="method"/>
-            <line num="70" count="5" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="setupShipCreationMap() : void" num="70" count="5" type="method"/>
             <line num="71" count="5" type="stmt"/>
             <line num="72" count="5" type="stmt"/>
             <line num="73" count="5" type="stmt"/>
-            <line complexity="1" visibility="protected" signature="setupShipCreationList() : void" num="75" count="5" type="method"/>
-            <line num="76" count="5" type="stmt"/>
-            <line num="77" count="5" type="stmt"/>
+            <line num="74" count="5" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="setupShipCreationList() : void" num="77" count="5" type="method"/>
             <line num="78" count="5" type="stmt"/>
             <line num="79" count="5" type="stmt"/>
+            <line num="80" count="5" type="stmt"/>
+            <line num="81" count="5" type="stmt"/>
+            <line complexity="12" visibility="public" signature="playOneTurn(Board&lt;Character&gt;,BoardTextView) : void" num="84" count="79" type="method"/>
+            <line num="85" count="79" type="stmt"/>
+            <line num="86" count="79" type="stmt"/>
+            <line num="87" count="79" type="stmt"/>
+            <line num="88" count="79" type="stmt"/>
+            <line num="89" count="79" type="stmt"/>
+            <line num="90" count="79" type="stmt"/>
+            <line num="92" count="79" type="stmt"/>
+            <line num="93" count="84" type="stmt"/>
+            <line num="94" count="84" type="stmt"/>
+            <line num="95" count="84" type="stmt"/>
+            <line num="96" count="83" type="stmt"/>
+            <line falsecount="4" truecount="79" num="96" type="cond"/>
+            <line num="98" count="79" type="stmt"/>
+            <line num="99" count="79" type="stmt"/>
+            <line num="101" count="4" type="stmt"/>
+            <line num="104" count="5" type="stmt"/>
+            <line num="105" count="5" type="stmt"/>
+            <line num="108" count="79" type="stmt"/>
+            <line num="109" count="79" type="stmt"/>
+            <line falsecount="42" truecount="37" num="109" type="cond"/>
+            <line num="110" count="37" type="stmt"/>
+            <line num="111" count="42" type="stmt"/>
+            <line falsecount="42" truecount="0" num="111" type="cond"/>
+            <line num="112" count="0" type="stmt"/>
+            <line num="113" count="42" type="stmt"/>
+            <line falsecount="37" truecount="5" num="113" type="cond"/>
+            <line num="114" count="5" type="stmt"/>
+            <line num="115" count="37" type="stmt"/>
+            <line falsecount="24" truecount="13" num="115" type="cond"/>
+            <line num="116" count="13" type="stmt"/>
+            <line num="117" count="24" type="stmt"/>
+            <line falsecount="10" truecount="14" num="117" type="cond"/>
+            <line num="118" count="14" type="stmt"/>
+            <line num="119" count="10" type="stmt"/>
+            <line falsecount="0" truecount="10" num="119" type="cond"/>
+            <line num="120" count="10" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="textPlayer_print(String) : void" num="126" count="1" type="method"/>
+            <line num="127" count="1" type="stmt"/>
+            <line num="128" count="1" type="stmt"/>
          </file>
          <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/BattleShipBoard.java" name="BattleShipBoard.java">
             <metrics coveredelements="56" coveredconditionals="12" complexity="16" loc="105" coveredmethods="10" methods="10" elements="56" classes="1" ncloc="74" statements="34" conditionals="12" coveredstatements="34"/>
             <class name="BattleShipBoard">
                <metrics coveredelements="56" coveredconditionals="12" complexity="16" coveredmethods="10" methods="10" elements="56" statements="34" conditionals="12" coveredstatements="34"/>
             </class>
-            <line complexity="1" visibility="public" signature="getWidth() : int" num="23" count="5543" type="method"/>
-            <line num="24" count="5543" type="stmt"/>
-            <line complexity="1" visibility="public" signature="getHeight() : int" num="27" count="582" type="method"/>
-            <line num="28" count="582" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getWidth() : int" num="23" count="40860" type="method"/>
+            <line num="24" count="40860" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getHeight() : int" num="27" count="3979" type="method"/>
+            <line num="28" count="3979" type="stmt"/>
             <line complexity="2" visibility="public" signature="tryAddShip(Ship&lt;T&gt;) : String" num="31" count="28" type="method"/>
             <line num="32" count="28" type="stmt"/>
             <line num="33" count="28" type="stmt"/>
@@ -250,30 +305,30 @@
             <line num="55" count="18" type="stmt"/>
             <line num="56" count="18" type="stmt"/>
             <line num="57" count="18" type="stmt"/>
-            <line complexity="2" visibility="protected" signature="whatIsAt(Coordinate,boolean) : T" num="60" count="4876" type="method"/>
-            <line num="61" count="4876" type="stmt"/>
-            <line num="62" count="21204" type="stmt"/>
-            <line falsecount="20503" truecount="701" num="62" type="cond"/>
-            <line num="63" count="701" type="stmt"/>
-            <line num="66" count="4175" type="stmt"/>
-            <line complexity="1" visibility="public" signature="whatIsAtForSelf(Coordinate) : T" num="69" count="4843" type="method"/>
-            <line num="70" count="4843" type="stmt"/>
-            <line complexity="1" visibility="public" signature="whatIsAtForEnemy(Coordinate) : T" num="73" count="33" type="method"/>
-            <line num="74" count="33" type="stmt"/>
-            <line complexity="2" visibility="public" signature="fireAt(Coordinate) : Ship&lt;T&gt;" num="81" count="4" type="method"/>
-            <line num="82" count="4" type="stmt"/>
-            <line num="83" count="4" type="stmt"/>
-            <line falsecount="1" truecount="3" num="83" type="cond"/>
-            <line num="84" count="3" type="stmt"/>
-            <line num="85" count="3" type="stmt"/>
-            <line num="88" count="1" type="stmt"/>
-            <line num="89" count="1" type="stmt"/>
-            <line complexity="2" visibility="public" signature="CheckingLost() : boolean" num="95" count="2" type="method"/>
-            <line num="96" count="2" type="stmt"/>
-            <line num="97" count="2" type="stmt"/>
-            <line falsecount="1" truecount="1" num="97" type="cond"/>
-            <line num="98" count="1" type="stmt"/>
-            <line num="101" count="1" type="stmt"/>
+            <line complexity="2" visibility="protected" signature="whatIsAt(Coordinate,boolean) : T" num="60" count="37130" type="method"/>
+            <line num="61" count="37130" type="stmt"/>
+            <line num="62" count="308531" type="stmt"/>
+            <line falsecount="298286" truecount="10245" num="62" type="cond"/>
+            <line num="63" count="10245" type="stmt"/>
+            <line num="66" count="26885" type="stmt"/>
+            <line complexity="1" visibility="public" signature="whatIsAtForSelf(Coordinate) : T" num="69" count="22025" type="method"/>
+            <line num="70" count="22025" type="stmt"/>
+            <line complexity="1" visibility="public" signature="whatIsAtForEnemy(Coordinate) : T" num="73" count="15105" type="method"/>
+            <line num="74" count="15105" type="stmt"/>
+            <line complexity="2" visibility="public" signature="fireAt(Coordinate) : Ship&lt;T&gt;" num="81" count="83" type="method"/>
+            <line num="82" count="83" type="stmt"/>
+            <line num="83" count="643" type="stmt"/>
+            <line falsecount="598" truecount="45" num="83" type="cond"/>
+            <line num="84" count="45" type="stmt"/>
+            <line num="85" count="45" type="stmt"/>
+            <line num="88" count="38" type="stmt"/>
+            <line num="89" count="38" type="stmt"/>
+            <line complexity="2" visibility="public" signature="CheckingLost() : boolean" num="95" count="81" type="method"/>
+            <line num="96" count="81" type="stmt"/>
+            <line num="97" count="296" type="stmt"/>
+            <line falsecount="217" truecount="79" num="97" type="cond"/>
+            <line num="98" count="79" type="stmt"/>
+            <line num="101" count="2" type="stmt"/>
          </file>
          <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/main/java/ece651/sp22/yy340/battleship/PlacementRuleChecker.java" name="PlacementRuleChecker.java">
             <metrics coveredelements="13" coveredconditionals="4" complexity="4" loc="25" coveredmethods="2" methods="2" elements="13" classes="1" ncloc="18" statements="7" conditionals="4" coveredstatements="7"/>
@@ -309,33 +364,33 @@
             <line num="22" count="47" type="stmt"/>
             <line num="23" count="47" type="stmt"/>
             <line num="24" count="260" type="stmt"/>
-            <line complexity="2" visibility="protected" signature="checkCoordinateInThisShip(Coordinate) : void" num="28" count="714" type="method"/>
-            <line num="29" count="714" type="stmt"/>
-            <line falsecount="713" truecount="1" num="29" type="cond"/>
+            <line complexity="2" visibility="protected" signature="checkCoordinateInThisShip(Coordinate) : void" num="28" count="10300" type="method"/>
+            <line num="29" count="10300" type="stmt"/>
+            <line falsecount="10299" truecount="1" num="29" type="cond"/>
             <line num="30" count="1" type="stmt"/>
-            <line complexity="2" visibility="public" signature="occupiesCoordinates(Coordinate) : boolean" num="34" count="21220" type="method"/>
-            <line num="37" count="21220" type="stmt"/>
-            <line falsecount="714" truecount="20506" num="37" type="cond"/>
-            <line num="38" count="20506" type="stmt"/>
-            <line num="40" count="714" type="stmt"/>
-            <line complexity="2" visibility="public" signature="isSunk() : boolean" num="48" count="6" type="method"/>
-            <line num="51" count="6" type="stmt"/>
-            <line num="52" count="11" type="stmt"/>
-            <line falsecount="8" truecount="3" num="52" type="cond"/>
-            <line num="53" count="3" type="stmt"/>
-            <line num="56" count="3" type="stmt"/>
-            <line complexity="1" visibility="public" signature="recordHitAt(Coordinate) : void" num="59" count="6" type="method"/>
-            <line num="62" count="6" type="stmt"/>
-            <line num="63" count="6" type="stmt"/>
+            <line complexity="2" visibility="public" signature="occupiesCoordinates(Coordinate) : boolean" num="34" count="309186" type="method"/>
+            <line num="37" count="309186" type="stmt"/>
+            <line falsecount="10300" truecount="298886" num="37" type="cond"/>
+            <line num="38" count="298886" type="stmt"/>
+            <line num="40" count="10300" type="stmt"/>
+            <line complexity="2" visibility="public" signature="isSunk() : boolean" num="48" count="300" type="method"/>
+            <line num="51" count="300" type="stmt"/>
+            <line num="52" count="789" type="stmt"/>
+            <line falsecount="708" truecount="81" num="52" type="cond"/>
+            <line num="53" count="81" type="stmt"/>
+            <line num="56" count="219" type="stmt"/>
+            <line complexity="1" visibility="public" signature="recordHitAt(Coordinate) : void" num="59" count="48" type="method"/>
+            <line num="62" count="48" type="stmt"/>
+            <line num="63" count="48" type="stmt"/>
             <line complexity="1" visibility="public" signature="wasHitAt(Coordinate) : boolean" num="66" count="2" type="method"/>
             <line num="69" count="2" type="stmt"/>
             <line num="70" count="2" type="stmt"/>
-            <line complexity="2" visibility="public" signature="getDisplayInfoAt(Coordinate,boolean) : T" num="74" count="705" type="method"/>
-            <line num="78" count="705" type="stmt"/>
-            <line num="79" count="705" type="stmt"/>
-            <line falsecount="12" truecount="693" num="79" type="cond"/>
-            <line num="80" count="693" type="stmt"/>
-            <line num="82" count="12" type="stmt"/>
+            <line complexity="2" visibility="public" signature="getDisplayInfoAt(Coordinate,boolean) : T" num="74" count="10249" type="method"/>
+            <line num="78" count="10249" type="stmt"/>
+            <line num="79" count="10249" type="stmt"/>
+            <line falsecount="3748" truecount="6501" num="79" type="cond"/>
+            <line num="80" count="6501" type="stmt"/>
+            <line num="82" count="3748" type="stmt"/>
             <line complexity="1" visibility="public" signature="getCoordinates() : Iterable&lt;Coordinate&gt;" num="87" count="63" type="method"/>
             <line num="89" count="63" type="stmt"/>
          </file>
@@ -445,11 +500,11 @@
             <line complexity="1" visibility="public" signature="SimpleShipDisplayInfo(T,T)" num="7" count="95" type="method"/>
             <line num="8" count="95" type="stmt"/>
             <line num="9" count="95" type="stmt"/>
-            <line complexity="2" visibility="public" signature="getInfo(Coordinate,boolean) : T" num="12" count="705" type="method"/>
-            <line num="15" count="705" type="stmt"/>
-            <line falsecount="695" truecount="10" num="15" type="cond"/>
-            <line num="16" count="10" type="stmt"/>
-            <line num="18" count="695" type="stmt"/>
+            <line complexity="2" visibility="public" signature="getInfo(Coordinate,boolean) : T" num="12" count="10249" type="method"/>
+            <line num="15" count="10249" type="stmt"/>
+            <line falsecount="6821" truecount="3428" num="15" type="cond"/>
+            <line num="16" count="3428" type="stmt"/>
+            <line num="18" count="6821" type="stmt"/>
          </file>
          <file path="/home/dianyu/Documents/ECE651/final/ece651-sp22-yy340-battleship/app/src/test/java/ece651/sp22/yy340/battleship/InBoundsRuleCheckerTest.java" name="InBoundsRuleCheckerTest.java">
             <metrics coveredelements="16" coveredconditionals="0" complexity="1" loc="34" coveredmethods="1" methods="1" elements="16" classes="1" ncloc="24" statements="15" conditionals="0" coveredstatements="15"/>
@@ -889,7 +944,7 @@
          </file>
       </package>
    </project>
-   <testproject name="app" timestamp="1644112180818">
+   <testproject name="app" timestamp="1644116998751">
       <metrics coveredelements="0" complexity="0" loc="0" methods="0" classes="0" statements="0" packages="0" coveredconditionals="0" coveredmethods="0" elements="0" ncloc="0" files="0" conditionals="0" coveredstatements="0"/>
    </testproject>
 </coverage>

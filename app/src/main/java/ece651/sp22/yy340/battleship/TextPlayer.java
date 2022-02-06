@@ -37,7 +37,7 @@ public class TextPlayer {
   public Placement readPlacement(String prompt) throws IOException {
     out.println(prompt);
     String s = inputReader.readLine();
-    if(s == null){
+    if (s == null) {
       throw new EOFException();
     }
     return new Placement(s);
@@ -63,21 +63,68 @@ public class TextPlayer {
     out.print(prompt.toString());
     out.print("--------------------------------------------------------------------------------\n");
     for (String ship : this.shipsToPlace) {
-      doOnePlacement(ship,this.shipCreationFns.get(ship));
+      doOnePlacement(ship, this.shipCreationFns.get(ship));
     }
   }
-      protected void setupShipCreationMap() {
-        shipCreationFns.put("Submarine", (p) -> shipFactory.makeSubmarine(p));
-        shipCreationFns.put("Destroyer", (p) -> shipFactory.makeDestroyer(p));
-        shipCreationFns.put("Battleship", (p) -> shipFactory.makeBattleship(p));
-        shipCreationFns.put("Carrier", (p) -> shipFactory.makeCarrier(p));
-    }
-    protected void setupShipCreationList() {
-        shipsToPlace.addAll(Collections.nCopies(2, "Submarine"));
-        shipsToPlace.addAll(Collections.nCopies(3, "Destroyer"));
-        shipsToPlace.addAll(Collections.nCopies(3, "Battleship"));
-        shipsToPlace.addAll(Collections.nCopies(2, "Carrier"));
-    }
 
+  protected void setupShipCreationMap() {
+    shipCreationFns.put("Submarine", (p) -> shipFactory.makeSubmarine(p));
+    shipCreationFns.put("Destroyer", (p) -> shipFactory.makeDestroyer(p));
+    shipCreationFns.put("Battleship", (p) -> shipFactory.makeBattleship(p));
+    shipCreationFns.put("Carrier", (p) -> shipFactory.makeCarrier(p));
+  }
 
+  protected void setupShipCreationList() {
+    shipsToPlace.addAll(Collections.nCopies(2, "Submarine"));
+    shipsToPlace.addAll(Collections.nCopies(3, "Destroyer"));
+    shipsToPlace.addAll(Collections.nCopies(3, "Battleship"));
+    shipsToPlace.addAll(Collections.nCopies(2, "Carrier"));
+  }
+
+  public void playOneTurn(Board<Character> enemyBoard, BoardTextView enemyView) throws IOException {
+    String myHeader = "Your Views:";
+    String enemyHeader = "Enemy Views:";
+    out.print("     This is Player " + this.name + " 's Turn: Please move: \n");
+    out.print(view.displayMyBoardWithEnemyNextToIt(enemyView, myHeader, enemyHeader));
+    Character s = null;
+    Coordinate c = null;
+
+    while (true) {
+      String promt = inputReader.readLine();
+      try {
+        c = new Coordinate(promt);
+        if (c.getColumn() > 0 && c.getColumn() <= (enemyBoard.getWidth() - 1) && c.getRow() > 0
+            && c.getRow() <= (enemyBoard.getHeight() - 1)) {
+          s = enemyBoard.whatIsAtForSelf(c);
+          break;
+        } else {
+          throw new IllegalArgumentException("Please input an valid position!\n");
+        }
+      } catch (IllegalArgumentException err) {
+        out.print(err);
+        continue;
+      }
+    }
+    Ship<Character> e_s = enemyBoard.fireAt(c);
+    if (s == null) {
+      out.println("Missed!");
+    } else if (s == '*') {
+      out.println("Already Hit that Place!");
+    } else if (s == 's') {
+      out.println("Hit Submarine!");
+    } else if (s == 'b') {
+      out.println("Hit Battleship!");
+    } else if (s == 'c') {
+      out.println("Hit Carrier!");
+    } else if (s == 'd') {
+      out.println("Hit Destroyer!!");
+    } else {
+      out.println("Nothing Happened!");
+    }
+  }
+
+  public void textPlayer_print(String enemyName) {
+    out.println("  Player " + this.name + " Win!\n");
+    out.println("  Player " + enemyName + " Lost!\n");
+  }
 }
