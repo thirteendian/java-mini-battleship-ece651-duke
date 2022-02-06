@@ -8,7 +8,7 @@ public class NoCollisionRuleChecker<T> extends PlacementRuleChecker<T> {
   @Override
   protected String checkMyRule(Ship<T> theShip, Board<T> theBoard) {
     for (Coordinate coordinate : theShip.getCoordinates()) {
-      if (theBoard.whatIsAt(coordinate) != null) {
+      if (theBoard.whatIsAtForSelf(coordinate) != null) {
         return "That placement is invalide: Ship Overlaps !";
       }
     }

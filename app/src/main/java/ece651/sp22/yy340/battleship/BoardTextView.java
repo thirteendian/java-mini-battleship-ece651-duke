@@ -1,5 +1,7 @@
 package ece651.sp22.yy340.battleship;
 
+import java.util.function.Function;
+
 /**
  * This class handles textual display of a Board (i.e., converting it to a
  * string to show to the user). It supports two ways to display the Board: one
@@ -26,14 +28,6 @@ public class BoardTextView {
     }
   }
 
-  public String displayMyOwnBoard() {
-    StringBuilder ans = new StringBuilder();
-    ans.append(makeHeader());
-    ans.append(makeBoard());
-    ans.append(makeHeader());
-    return ans.toString(); // this is a placeholder for the moment
-  }
-
   /**
    * This makes the header line, e.g. 0|1|2|3|4\n
    * 
@@ -57,25 +51,24 @@ public class BoardTextView {
    * @return the String that is the Test board for the given board
    */
 
-  String makeBoard() {
+  String makeBoard(Function<Coordinate, Character> getSquareFn) {
     StringBuilder ans = new StringBuilder();
     char alphabetic = 'A';
     for (int row = 0; row < toDisplay.getHeight(); row++) {
       ans.append((char) (alphabetic + row));
       ans.append("  ");
-      /*if (toDisplay.whatIsAt(new Coordinate(row, 0)) == null) {
-        ans.append(' ');
-      } else {
-        ans.append(toDisplay.whatIsAt(new Coordinate(row, 0)));
-      }*/
+      /*
+       * if (toDisplay.whatIsAt(new Coordinate(row, 0)) == null) { ans.append(' '); }
+       * else { ans.append(toDisplay.whatIsAt(new Coordinate(row, 0))); }
+       */
 
       for (int column = 1; column < toDisplay.getWidth(); column++) {
-        //Note that Column start from 1
+        // Note that Column start from 1
         ans.append("|"); // Two space -> one space
-        if (toDisplay.whatIsAt(new Coordinate(row, column)) == null) {
+        if (getSquareFn.apply(new Coordinate(row, column)) == null) {
           ans.append(' ');
         } else {
-          ans.append(toDisplay.whatIsAt(new Coordinate(row, column)));
+          ans.append(getSquareFn.apply(new Coordinate(row, column)));
         }
       }
       ans.append(" ");// two space -> one space
@@ -84,4 +77,21 @@ public class BoardTextView {
     }
     return ans.toString();
   }
+
+  protected String displayAnyBoard(Function<Coordinate, Character> getSquareFn) {
+    StringBuilder ans = new StringBuilder();
+    ans.append(makeHeader());
+    ans.append(makeBoard(getSquareFn));
+    ans.append(makeHeader());
+    return ans.toString(); // this is a placeholder for the moment
+  }
+  
+  public String displayMyOwnBoard() {
+    return displayAnyBoard((c) -> toDisplay.whatIsAtForSelf(c));
+  }
+
+  public String displayEnemyBoard() {
+    return displayAnyBoard((c) -> toDisplay.whatIsAtForEnemy(c));
+  }
+
 }

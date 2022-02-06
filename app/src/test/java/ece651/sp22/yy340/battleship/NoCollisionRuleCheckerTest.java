@@ -9,7 +9,7 @@ public class NoCollisionRuleCheckerTest {
   public void test_NoCollisionRuleChecker() {
     V1ShipFactory v1shipfactory = new V1ShipFactory();
     NoCollisionRuleChecker<Character> nocollisionrulechecker = new NoCollisionRuleChecker<>(null);
-    BattleShipBoard<Character> b = new BattleShipBoard<>(10, 20, nocollisionrulechecker);
+    BattleShipBoard<Character> b = new BattleShipBoard<>(10, 20, nocollisionrulechecker, 'X');
 
     Ship<Character> s1 = v1shipfactory.makeDestroyer(new Placement("B2V"));
     b.tryAddShip(s1);
@@ -26,7 +26,7 @@ public class NoCollisionRuleCheckerTest {
   public void test_NoCollisionRule_multichecker() {
     V1ShipFactory v1shipfactory = new V1ShipFactory();
     NoCollisionRuleChecker<Character> multi_checker = new NoCollisionRuleChecker<>(new InBoundsRuleChecker<>(null));
-    BattleShipBoard<Character> b1 = new BattleShipBoard<>(10, 10, multi_checker);
+    BattleShipBoard<Character> b1 = new BattleShipBoard<>(10, 10, multi_checker,'X');
     Ship<Character> s1 = v1shipfactory.makeDestroyer(new Placement("A4H"));
     b1.tryAddShip(s1);
     Ship<Character> s2 = v1shipfactory.makeBattleship(new Placement("A7V"));

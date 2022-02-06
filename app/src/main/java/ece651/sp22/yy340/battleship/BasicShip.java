@@ -4,12 +4,22 @@ import java.util.HashMap;
 
 public abstract class BasicShip<T> implements Ship<T> {
 
-  protected HashMap<Coordinate, Boolean> myPieces;
+  /*
+   if myPieces.get(c)  is null, c is not part of this Ship
+   if myPieces.get(c)  is false, c is part of this ship and has not been hit
+   if myPieces.get(c)  is true, c is part of this ship and has been hit
+  */
+  protected HashMap<Coordinate, Boolean> myPieces; 
   protected ShipDisplayInfo<T> myDisplayInfo;
+  protected ShipDisplayInfo<T> enemyDisplayInfo;
 
-  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo) {
+  /*
+   * Constructor
+   */
+  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo, ShipDisplayInfo<T> eneDisplayInfo) {
     this.myPieces = new HashMap<Coordinate, Boolean>();
     this.myDisplayInfo = myDisplayInfo;
+    this.enemyDisplayInfo = eneDisplayInfo;
     for (Coordinate c : where) {
       this.myPieces.put(c, false);
     }
@@ -24,10 +34,10 @@ public abstract class BasicShip<T> implements Ship<T> {
   @Override
   public boolean occupiesCoordinates(Coordinate where) {
 
-    if (this.myPieces.get(where) != null) {
-      return true;
-    } else {
+    if (this.myPieces.get(where) == null) {
       return false;
+    } else {
+      return true;
     }
 
   }
@@ -35,12 +45,12 @@ public abstract class BasicShip<T> implements Ship<T> {
   @Override
   public boolean isSunk() {
     // TODO Auto-generated method stub
-    for (boolean ans : myPieces.values()) {
-      if (ans == true) {
-        return true;
+    for (boolean part : myPieces.values()) {
+      if (part == false) {
+        return false;
       }
     }
-    return false;
+    return true;
   }
 
   @Override
@@ -48,7 +58,6 @@ public abstract class BasicShip<T> implements Ship<T> {
     // TODO Auto-generated method stub
     checkCoordinateInThisShip(where);
     myPieces.put(where, true);
-
   }
 
   @Override
@@ -60,11 +69,16 @@ public abstract class BasicShip<T> implements Ship<T> {
   }
 
   @Override
-  public T getDisplayInfoAt(Coordinate where) {
+  public T getDisplayInfoAt(Coordinate where, boolean myShip) {
     // TODO Auto-generated method stub
     // look up the hit status of this coordinate
     checkCoordinateInThisShip(where);
-    return myDisplayInfo.getInfo(where, myPieces.get(where));
+    if (myShip) {
+      return myDisplayInfo.getInfo(where, myPieces.get(where));
+    } else {
+      return enemyDisplayInfo.getInfo(where, myPieces.get(where));
+    }
+
   }
 
   @Override

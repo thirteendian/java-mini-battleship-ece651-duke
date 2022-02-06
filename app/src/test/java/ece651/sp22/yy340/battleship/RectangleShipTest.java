@@ -1,8 +1,10 @@
 package ece651.sp22.yy340.battleship;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.HashSet;
 
@@ -34,7 +36,7 @@ public class RectangleShipTest {
     RectangleShip<Character> s1 = new RectangleShip<Character>(c1, 's', '*');
     assertEquals(true, s1.occupiesCoordinates(c1));
 
-    RectangleShip<Character> s2 = new RectangleShip<Character>("submarine",c1, 2, 3, info);
+    RectangleShip<Character> s2 = new RectangleShip<Character>("submarine",c1, 2, 3, 's','*');
     assertEquals("submarine", s2.getName());
     assertEquals(true, s2.occupiesCoordinates(c2));
     assertEquals(false, s2.occupiesCoordinates(c3));
@@ -71,9 +73,9 @@ public class RectangleShipTest {
       RectangleShip<Character> s = new RectangleShip<Character>("submarine",c1, 2, 1, 's', '*');
       //assertThrows(IllegalArgumentException.class, () -> s.recordHitAt(c2));
       s.recordHitAt(c2);
-      assertEquals(true, s.isSunk());
+      assertFalse(s.isSunk());
       s.recordHitAt(c1);
-      assertEquals(true, s.isSunk());
+      assertTrue(s.isSunk());
     }
   
     @Test

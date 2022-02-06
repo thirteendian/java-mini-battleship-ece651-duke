@@ -16,7 +16,7 @@ public class RectangleShip<T> extends BasicShip<T> {
    * (row=1,col=2) width = 1 height = 3
    */
   static HashSet<Coordinate> makeCoords(Coordinate upperLeft, int width, int height) {
-    HashSet<Coordinate> set_of_Coordinates = new HashSet<>(); 
+    HashSet<Coordinate> set_of_Coordinates = new HashSet<>();
     for (int row = upperLeft.getRow(); row < upperLeft.getRow() + height; row++) {
       for (int column = upperLeft.getColumn(); column < upperLeft.getColumn() + width; column++) {
         Coordinate coordinate_c = new Coordinate(row, column);
@@ -26,13 +26,15 @@ public class RectangleShip<T> extends BasicShip<T> {
     return set_of_Coordinates;
   }
 
-  public RectangleShip(String name, Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> displayInfo) {
-    super(makeCoords(upperLeft, width, height), displayInfo);
+  public RectangleShip(String name, Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo,
+      ShipDisplayInfo<T> enemyDisplayInfo) {
+    super(makeCoords(upperLeft, width, height), myDisplayInfo, enemyDisplayInfo);
     this.name = name;
   }
 
   public RectangleShip(String name, Coordinate upperLeft, int width, int height, T data, T onHit) {
-    this(name, upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
+    this(name, upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit),
+        new SimpleShipDisplayInfo<T>(null, data));
   }
 
   public RectangleShip(Coordinate upperLeft, T data, T onHit) {
