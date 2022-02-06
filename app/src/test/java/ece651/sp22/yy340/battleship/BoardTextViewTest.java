@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.LinkedList;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 
 public class BoardTextViewTest {
   @Test
@@ -41,6 +42,21 @@ public class BoardTextViewTest {
     // you should write two assertThrows here
     assertThrows(IllegalArgumentException.class, () -> new BoardTextView(wideBoard));
     assertThrows(IllegalArgumentException.class, () -> new BoardTextView(tallBoard));
+  }
+
+  @Test
+  public void test_two_boardview(){
+    Board<Character> b1 = new BattleShipBoard<Character>(4, 3, 'X');
+    Board<Character> b2 = new BattleShipBoard<Character>(4, 3, 'X');
+    BoardTextView v1 = new BoardTextView(b1);
+    BoardTextView v2 = new BoardTextView(b2);
+    String myview = "     my_board                              enemy_board\n"+
+      "  0|1|2|3                               0|1|2|3\n"+
+      "A  | | |  A                           A  | | |  A\n"+
+      "B  | | |  B                           B  | | |  B\n"+
+      "C  | | |  C                           C  | | |  C\n"+
+      "  0|1|2|3                               0|1|2|3\n";
+    assertEquals(myview, v1.displayMyBoardWithEnemyNextToIt(v2, "my_board", "enemy_board"));
   }
 
 }

@@ -85,13 +85,41 @@ public class BoardTextView {
     ans.append(makeHeader());
     return ans.toString(); // this is a placeholder for the moment
   }
-  
+
   public String displayMyOwnBoard() {
     return displayAnyBoard((c) -> toDisplay.whatIsAtForSelf(c));
   }
 
   public String displayEnemyBoard() {
     return displayAnyBoard((c) -> toDisplay.whatIsAtForEnemy(c));
+  }
+
+  public String displayMyBoardWithEnemyNextToIt(BoardTextView enemyView, String myHeader, String enemyHeader) {
+
+    int head1_loc = 5;
+    int board2_loc = 2 * toDisplay.getWidth() + 19;
+    int head2_loc = 2 * toDisplay.getWidth() + 22;
+    String head1_space = " ".repeat(head1_loc);
+    String board2_space = " ".repeat(board2_loc);
+    String head2_space = " ".repeat(head2_loc);
+
+    StringBuilder twoview = new StringBuilder();
+    // append header
+    twoview.append(head1_space + myHeader + head2_space + enemyHeader + '\n');
+    // append board 
+    String[] myboard = displayMyOwnBoard().split("\n");
+    String[] enemyboard = enemyView.displayEnemyBoard().split("\n");
+    /*
+     * Note that for line in myboard/enemyboard is splited by \n
+     * thus for new combined board, each line should be two merged
+     * with space as : myboard+board2_space+head2_space
+     */
+    twoview.append(myboard[0]+board2_space+"  "+enemyboard[0]+'\n');
+    for(int i =1; i<myboard.length-1; i++){
+      twoview.append(myboard[i]+board2_space+enemyboard[i]+'\n');
+    }
+        twoview.append(myboard[myboard.length-1]+board2_space+"  "+enemyboard[myboard.length-1]+'\n');
+    return twoview.toString();
   }
 
 }

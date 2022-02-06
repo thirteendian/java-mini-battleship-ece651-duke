@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece651.sp22.yy340.battleship.BoardTextViewTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-02-06T00:48:08" hostname="dianyu-XPS-15-9550" time="0.004">
+<testsuite name="ece651.sp22.yy340.battleship.BoardTextViewTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-02-06T01:40:01" hostname="dianyu-XPS-15-9550" time="0.019">
   <properties/>
-  <testcase name="test_invalid_board_size()" classname="ece651.sp22.yy340.battleship.BoardTextViewTest" time="0.001"/>
+  <testcase name="test_invalid_board_size()" classname="ece651.sp22.yy340.battleship.BoardTextViewTest" time="0.002"/>
   <testcase name="test_display_non_empty_4by3()" classname="ece651.sp22.yy340.battleship.BoardTextViewTest" time="0.001"/>
-  <testcase name="test_display_empty_2by2()" classname="ece651.sp22.yy340.battleship.BoardTextViewTest" time="0.0"/>
+  <testcase name="test_two_boardview()" classname="ece651.sp22.yy340.battleship.BoardTextViewTest" time="0.012"/>
+  <testcase name="test_display_empty_2by2()" classname="ece651.sp22.yy340.battleship.BoardTextViewTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
