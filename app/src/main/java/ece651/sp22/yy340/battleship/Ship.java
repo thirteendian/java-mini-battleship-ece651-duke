@@ -1,5 +1,7 @@
 package ece651.sp22.yy340.battleship;
 
+import java.util.HashMap;
+
 /**
  * This interface represents any type of Ship in our Battleship game. It is
  * generic in typename T, which is the type of information the view needs to
@@ -68,4 +70,11 @@ public interface Ship<T> {
    */
   public Iterable<Coordinate> getCoordinates();
 
+  /**
+   *Get the Hashmap record for Hit information
+   *
+   *@return Hashmap contains information for each coordinate
+   */
+  
+  public HashMap<Coordinate, Boolean> getmyPieces();
 }

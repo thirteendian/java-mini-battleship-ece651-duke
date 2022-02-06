@@ -54,7 +54,12 @@ public class BattleShipBoardTest {
     BoardTextView view = new BoardTextView(b);
     b.tryAddShip(s);
 
-    String myView = "  0|1|2|3\n" + "A  |d| |  A\n" + "B  |d| |  B\n" + "C  |d| |  C\n" + "  0|1|2|3\n";
+    String myView =
+      "  0|1|2|3\n" +
+      "A  |d| |  A\n" +
+      "B  |d| |  B\n" +
+      "C  |d| |  C\n" +
+      "  0|1|2|3\n";
     // make sure we laid things out the way we think we did.
     assertEquals(myView, view.displayMyOwnBoard());
     assertEquals('d', b.whatIsAtForSelf(new Coordinate(0, 1)));
@@ -91,4 +96,32 @@ public class BattleShipBoardTest {
      //also lost
      assertTrue(b.CheckingLost());
   }
+  @Test
+  public void test_moveShip(){
+    BattleShipBoard<Character> b = new BattleShipBoard<Character>(4, 3, 'X');
+    V2ShipFactory v1shipfactory = new V2ShipFactory();
+    Ship<Character> s = v1shipfactory.makeBattleship(new Placement("A1U"));
+    BoardTextView view = new BoardTextView(b);
+    b.tryAddShip(s);
+
+    String myView =
+      "  0|1|2|3\n" +
+      "A  | |b|  A\n" +
+      "B  |b|b|b B\n" +
+      "C  | | |  C\n" +
+      "  0|1|2|3\n";
+    assertEquals(view.displayMyOwnBoard(), myView);
+
+    b.fireAt(new Coordinate(1,2));
+    b.moveShip(s, new Placement("B1U"));
+    String myView1 =
+      "  0|1|2|3\n" +
+      "A  | | |  A\n" +
+      "B  | |*|  B\n" +
+      "C  |b|b|b C\n" +
+      "  0|1|2|3\n";
+    assertEquals(view.displayMyOwnBoard(), myView1);
+
+  }
+  
 }

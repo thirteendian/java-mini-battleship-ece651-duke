@@ -15,12 +15,12 @@ public class PlacementTest {
     Placement p3 = new Placement(c2, 'h');
     Placement p4 = new Placement(c3, 'v');
     assertEquals(p1, p2);
-    assertEquals(p2,p2);
+    assertEquals(p2, p2);
     assertNotEquals(p1, p3);
     assertNotEquals(p1, p4);
     assertNotEquals(p2, p3);
     assertEquals(false, p1.equals(p4));
-    assertNotEquals(p1, "A0V"); 
+    assertNotEquals(p1, "A0V");
   }
 
   @Test
@@ -56,30 +56,29 @@ public class PlacementTest {
   }
 
   @Test
-    void test_string_constructor_valid_cases() {
-        Placement p1 = new Placement("B2v");
-        assertEquals(p1.getWhere(), new Coordinate(1, 2));
-        assertEquals(p1.getOrientation(), 'V');
-        Placement p2 = new Placement("C3H");
-        assertEquals(p2.getWhere(), new Coordinate(2, 3));
-        assertEquals(p2.getOrientation(), 'H');
-        Placement p3 = new Placement("A0h");
-        assertEquals(p3.getWhere(), new Coordinate(0, 0));
-        assertEquals(p3.getOrientation(), 'H');
-    }
+  void test_string_constructor_valid_cases() {
+    Placement p1 = new Placement("B2v");
+    assertEquals(p1.getWhere(), new Coordinate(1, 2));
+    assertEquals(p1.getOrientation(), 'V');
+    Placement p2 = new Placement("C3H");
+    assertEquals(p2.getWhere(), new Coordinate(2, 3));
+    assertEquals(p2.getOrientation(), 'H');
+    Placement p3 = new Placement("A0h");
+    assertEquals(p3.getWhere(), new Coordinate(0, 0));
+    assertEquals(p3.getOrientation(), 'H');
+  }
 
-  
   @Test
-    void test_string_constructor_error_cases() {
-        assertThrows(IllegalArgumentException.class, () -> new Placement("B12H"));
-        assertThrows(IllegalArgumentException.class, () -> new Placement("BBH"));
-        assertThrows(IllegalArgumentException.class, () -> new Placement("A"));
-        assertThrows(IllegalArgumentException.class, () -> new Placement("A0J"));
+  void test_string_constructor_error_cases() {
+    assertThrows(IllegalArgumentException.class, () -> new Placement("B12H"));
+    assertThrows(IllegalArgumentException.class, () -> new Placement("BBH"));
+    assertThrows(IllegalArgumentException.class, () -> new Placement("A"));
+    assertThrows(IllegalArgumentException.class, () -> new Placement("A0J"));
   }
+
   @Test
-  void test_wrong_input(){
-    assertThrows(IllegalArgumentException.class, () -> new Placement(new Coordinate("A0"),'S'));
+  void test_wrong_input() {
+    assertThrows(IllegalArgumentException.class, () -> new Placement(new Coordinate("A0"), 'S'));
   }
-  
 
 }

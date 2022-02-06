@@ -48,7 +48,13 @@ public class TextPlayerTest {
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
     TextPlayer player = createTextPlayer(3, 4, "B1V\n", bytes);
     Board<Character> b = new BattleShipBoard<Character>(3, 4,'X');
-    String expected = "  0|1|2\n" + "A  | |  A\n" + "B  |d|  B\n" + "C  |d|  C\n" + "D  |d|  D\n" + "  0|1|2\n";
+    String expected =
+      "  0|1|2\n" +
+      "A  | |  A\n" +
+      "B  |d|  B\n" +
+      "C  |d|  C\n" +
+      "D  |d|  D\n" +
+      "  0|1|2\n";
     String expected_p = "Player " + player.name + " where would you like to place a Destroyer?\n" + expected;
     V1ShipFactory shipfactory = new V1ShipFactory();
     player.doOnePlacement("Destroyer", (p) -> shipfactory.makeDestroyer(p));

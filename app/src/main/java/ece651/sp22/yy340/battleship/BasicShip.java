@@ -88,5 +88,8 @@ public abstract class BasicShip<T> implements Ship<T> {
   public Iterable<Coordinate> getCoordinates() {
     return myPieces.keySet();
   }
-
+  @Override
+  public HashMap<Coordinate, Boolean> getmyPieces(){
+    return myPieces;
+  }
 }

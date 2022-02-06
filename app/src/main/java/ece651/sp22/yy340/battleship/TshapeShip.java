@@ -1,0 +1,68 @@
+package ece651.sp22.yy340.battleship;
+
+import java.util.HashSet;
+
+public class TshapeShip<T> extends BasicShip<T> {
+  final String name;
+
+  public String getName() {
+    return this.name;
+  }
+
+  static HashSet<Coordinate> makeCoords(Coordinate upperLeft, char orientation) {
+    HashSet<Coordinate> set_of_Coordinates = new HashSet<>();
+    if (orientation == 'U') {
+      Coordinate coordinate_a = new Coordinate(upperLeft.getRow(), upperLeft.getColumn() + 1);
+      Coordinate coordinate_b = new Coordinate(upperLeft.getRow() + 1, upperLeft.getColumn());
+      Coordinate coordinate_c = new Coordinate(upperLeft.getRow() + 1, upperLeft.getColumn() + 1);
+      Coordinate coordinate_d = new Coordinate(upperLeft.getRow() + 1, upperLeft.getColumn() + 2);
+      set_of_Coordinates.add(coordinate_a);
+      set_of_Coordinates.add(coordinate_b);
+      set_of_Coordinates.add(coordinate_c);
+      set_of_Coordinates.add(coordinate_d);
+    } else if (orientation == 'R') {
+      Coordinate coordinate_a = new Coordinate(upperLeft.getRow(), upperLeft.getColumn());
+      Coordinate coordinate_b = new Coordinate(upperLeft.getRow() + 1, upperLeft.getColumn());
+      Coordinate coordinate_c = new Coordinate(upperLeft.getRow() + 2, upperLeft.getColumn());
+      Coordinate coordinate_d = new Coordinate(upperLeft.getRow() + 1, upperLeft.getColumn() + 1);
+      set_of_Coordinates.add(coordinate_a);
+      set_of_Coordinates.add(coordinate_b);
+      set_of_Coordinates.add(coordinate_c);
+      set_of_Coordinates.add(coordinate_d);
+    } else if (orientation == 'D') {
+      Coordinate coordinate_a = new Coordinate(upperLeft.getRow(), upperLeft.getColumn());
+      Coordinate coordinate_b = new Coordinate(upperLeft.getRow(), upperLeft.getColumn() + 1);
+      Coordinate coordinate_c = new Coordinate(upperLeft.getRow(), upperLeft.getColumn() + 2);
+      Coordinate coordinate_d = new Coordinate(upperLeft.getRow() + 1, upperLeft.getColumn() + 1);
+      set_of_Coordinates.add(coordinate_a);
+      set_of_Coordinates.add(coordinate_b);
+      set_of_Coordinates.add(coordinate_c);
+      set_of_Coordinates.add(coordinate_d);
+    } else if (orientation == 'L') {
+      Coordinate coordinate_a = new Coordinate(upperLeft.getRow(), upperLeft.getColumn() + 1);
+      Coordinate coordinate_b = new Coordinate(upperLeft.getRow() + 1, upperLeft.getColumn());
+      Coordinate coordinate_c = new Coordinate(upperLeft.getRow() + 1, upperLeft.getColumn() + 1);
+      Coordinate coordinate_d = new Coordinate(upperLeft.getRow() + 2, upperLeft.getColumn() + 1);
+      set_of_Coordinates.add(coordinate_a);
+      set_of_Coordinates.add(coordinate_b);
+      set_of_Coordinates.add(coordinate_c);
+      set_of_Coordinates.add(coordinate_d);
+    }
+    return set_of_Coordinates;
+  }
+
+  /**
+   * Constructor Attention that since parent class have my DisplayInfo and
+   * enemyDisplayInfo, we need to initialise them as well
+   */
+  public TshapeShip(String name, Coordinate upperLeft, char orientation, ShipDisplayInfo<T> myDisplayInfo,
+      ShipDisplayInfo<T> enemyDisplayInfo) {
+    super(makeCoords(upperLeft, orientation), myDisplayInfo, enemyDisplayInfo);
+    this.name = name;
+  }
+
+  public TshapeShip(String name, Coordinate upperLeft, char orientation, T data, T onHit) {
+    this(name, upperLeft, orientation, new SimpleShipDisplayInfo<T>(data, onHit),
+        new SimpleShipDisplayInfo<T>(null, data));
+  }
+}
