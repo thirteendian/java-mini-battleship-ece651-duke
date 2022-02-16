@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class V1ShipFactoryTest {
 
-  private void checkShip(Ship<Character> testShip, String expectedName, char expectedLetter,
+  protected void checkShip(Ship<Character> testShip, String expectedName, char expectedLetter,
       Coordinate... expectedLocs) {
     assertEquals(expectedName, testShip.getName());
     for (Coordinate coordinate_t : expectedLocs) {

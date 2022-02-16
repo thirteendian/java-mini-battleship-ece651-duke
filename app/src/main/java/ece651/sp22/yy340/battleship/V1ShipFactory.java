@@ -3,7 +3,7 @@ package ece651.sp22.yy340.battleship;
 public class V1ShipFactory implements AbstractShipFactory<Character> {
 
   protected Ship<Character> createShip(Placement where, int w, int h, char letter, String name) {
-    //If horizontal then switch the width and height
+    // If horizontal then switch the width and height
     if (where.getOrientation() == 'H') {
       int temp = w;
       w = h;
@@ -27,7 +27,7 @@ public class V1ShipFactory implements AbstractShipFactory<Character> {
 
   @Override
   public Ship<Character> makeCarrier(Placement where) {
-    
+
     return createShip(where, 1, 6, 'c', "Carrier");
 
   }

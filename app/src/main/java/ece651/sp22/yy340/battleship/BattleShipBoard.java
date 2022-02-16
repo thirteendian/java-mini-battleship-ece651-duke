@@ -28,10 +28,23 @@ public class BattleShipBoard<T> implements Board<T> {
     return height;
   }
 
+  public ArrayList<Ship<T>> getShipList() {
+    return this.myShips;
+  }
+
   public String tryAddShip(Ship<T> toAdd) {
     String err = placementChecker.checkPlacement(toAdd, this);
     if (err == null) {
       myShips.add(toAdd);
+      return null;
+    }
+    return err;
+  }
+  
+  public String tryAddShipbyIndex(Ship<T> toAdd,int index) {
+    String err = placementChecker.checkPlacement(toAdd, this);
+    if (err == null) {
+      myShips.add(index, toAdd);
       return null;
     }
     return err;
@@ -102,4 +115,33 @@ public class BattleShipBoard<T> implements Board<T> {
 
   }
 
+  public void moveShip(Ship<T> oldShip, Placement newPlacement) {
+    int shipIndex = myShips.indexOf(oldShip);
+    Ship<T> tempShip = oldShip;
+    myShips.remove(oldShip);
+    Ship<Character> newShip = null;
+    V2ShipFactory f = new V2ShipFactory();
+    if (tempShip.getName() == "Battleship") {
+      newShip = f.makeBattleship(newPlacement);
+    } else if (tempShip.getName() == "Submarine") {
+      newShip = f.makeSubmarine(newPlacement);
+    } else if (tempShip.getName() == "Destroyer") {
+      newShip = f.makeDestroyer(newPlacement);
+    } else if (tempShip.getName() == "Carrier") {
+      newShip = f.makeCarrier(newPlacement);
+    }
+    // move the hit Coordinate as well
+    for (Coordinate c : tempShip.getCoordinates()) {
+      if (tempShip.getmyPieces().get(c) == true) {
+        newShip.recordHitAt(c);
+      }
+    }
+    //Add ship
+    String message = tryAddShipbyIndex((Ship<T>)newShip, shipIndex);
+    if(message != null){
+      throw new IllegalArgumentException(message);
+    }
+    return;
+  }
+  
 }

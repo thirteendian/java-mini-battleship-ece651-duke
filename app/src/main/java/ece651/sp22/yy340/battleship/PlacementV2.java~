@@ -1,0 +1,42 @@
+package ece651.sp22.yy340.battleship;
+
+public class PlacementV2 {
+  private final Coordinate where;
+  private final char orientation;
+
+  /**
+   * Constructor (whre, orientation)
+   * 
+   * @param where specifies the location and orientation of the ship to make
+   */
+  public PlacementV2(Coordinate where, char orientation) {
+    if (orientation != 'U' && orientation != 'u' && orientation != 'R' && orientation != 'r' && orientation != 'D'
+        && orientation != 'd' && orientation != 'L' && orientation != 'l') {
+      throw new IllegalArgumentException("Wrong format !");
+    }
+    this.where = where;
+    this.orientation = Character.toUpperCase(orientation);
+  }
+
+
+
+
+
+/**
+ * Constructor ("A0D")
+ * 
+ * @param descr is the input from player denoates the location and orientation
+ *              of the ship to make
+ */
+public PlacementV2(String descr){
+  if(descr.length() =3){
+    throw new IllegalArgumentException("Wrong format !");
+  }
+  char posi = descr.charAt(2);
+  if (posi != 'U' &&posi != 'u' &&posi != 'R' &&posi != 'r' &&posi != 'D' &&posi != 'd' &&posi != 'L' &&posi != 'l'){
+    throw new IllegalArgumentException("Wrong format !");
+  }
+  descr = descr.toUpperCase();
+  this.
+}
+}
